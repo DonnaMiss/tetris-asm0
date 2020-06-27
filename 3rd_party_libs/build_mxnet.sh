@@ -8,3 +8,4 @@ git submodule update --init --recursive
 mkdir build_amd64
 cd build_amd64
 
+cmake -DUSE_CPP_PACKAGE=1 -DBUILD_CPP_EXAMPLES=OFF -DUSE_CUDA=0 -DUSE_
