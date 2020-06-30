@@ -11,3 +11,5 @@ cd build_amd64
 cmake -D NCNN_BUILD_EXAMPLES=OFF -D NCNN_VULKAN=OFF -D NCNN_AVX2=ON -D CMAKE_BUILD_TYPE=Release ..
 
 nproc | xargs -I % make -j%
+
+make install
