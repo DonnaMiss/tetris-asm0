@@ -48,3 +48,21 @@ set(SOURCE_FILES
         src/inference/inferenceEngineTemplate.h
         src/inferenceManager.cpp
         )
+
+if (USE_MXNET)
+    list(APPEND SOURCE_FILES src/inference/mxnetInferEng.cpp)
+    list(APPEND LINKER_LIBS libmxnet.so)
+elseif(USE_ONNX_DEFAULT)
+    list(APPEND SOURCE_FILES src/inference/onnxRuntimeDefaultInferEng.cpp)
+    list(APPEND LINKER_LIBS libonnxruntime.so)
+elseif(USE_OPENVINO)
+    list(APPEND SOURCE_FILES src/inference/openvinoInferEng.cpp)
+    list(APPEND LINKER_LIBS libinference_engine.so libngraph.so)
+else()
+    list(APPEND SOURCE_FILES src/inference/ncnnInferEng.cpp)
+    list(APPEND LINKER_LIBS ncnn)
+endif()
+
+
+add_executable(deeplearningInferenceBenchmarks ${SOURCE_FILES})
+target_link_libraries(deeplearningInferenceBenchmarks ${LINKER_LIBS})
