@@ -9,4 +9,5 @@ The intention is to determine which has the lowest latency, and how the number o
 Thead dependency can be used to optimize CPU throughput (ex. run multiple instances in parallel each only using a reduced number of threads).
 
 ## Test Specs
-The benchmarks are performed on `Dual Intel(R) Xe
+The benchmarks are performed on `Dual Intel(R) Xeon(R) CPU E5-2630 v4 @ 2.20GHz`, 20 cores total, 128 Gb of ram.
+The model used 
