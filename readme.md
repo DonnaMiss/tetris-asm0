@@ -12,3 +12,5 @@ Thead dependency can be used to optimize CPU throughput (ex. run multiple instan
 The benchmarks are performed on `Dual Intel(R) Xeon(R) CPU E5-2630 v4 @ 2.20GHz`, 20 cores total, 128 Gb of ram.
 The model used for inference is the [Arcface](https://docs.openvinotoolkit.org/latest/omz_models_public_face_recognition_resnet100_arcface_face_recognition_resnet100_arcface.html) ResNet100 with 65.131 MParams and 24.209 GFLOPs. 
 The model was trained in mxnet.
+The model input is a 112x112 rgb image. 
+The time taken to read the image into memory a
