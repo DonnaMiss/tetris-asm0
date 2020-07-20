@@ -15,4 +15,5 @@ The model was trained in mxnet.
 The model input is a 112x112 rgb image. 
 The time taken to read the image into memory and decode the image to rgb format is *not* included in the inference time.
 The time taken to convert the rgb image buffer into the framework-specific expected network input format *is* included in the inference time. 
-First inference time is discarded to ensure all network weights and params have been loaded. Me
+First inference time is discarded to ensure all network weights and params have been loaded. Memory usage refers to maximum resident set size.
+The number of inferences used to gen
