@@ -21,4 +21,5 @@ The number of inferences used to generate the average time is on the order of 10
 Runtime dependencies refers to dependencies which must be linked and are *not* standard system libraries such as `libstdc++.so`. 
 
 ## Usage
-- Start by navigating to the `3rd_party_libs` directory and compile the inference frameworks by running
+- Start by navigating to the `3rd_party_libs` directory and compile the inference frameworks by running the provided shell scripts.
+- `./deeplearningInferenceBenchmarks /pa
