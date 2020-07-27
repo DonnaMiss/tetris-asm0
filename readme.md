@@ -22,4 +22,10 @@ Runtime dependencies refers to dependencies which must be linked and are *not* s
 
 ## Usage
 - Start by navigating to the `3rd_party_libs` directory and compile the inference frameworks by running the provided shell scripts.
-- `./deeplearningInferenceBenchmarks /pa
+- `./deeplearningInferenceBenchmarks /path/to/model/directory number_of_threads (optional)`
+
+## Summary
+
+## Results
+
+![alt text](./images/sp
