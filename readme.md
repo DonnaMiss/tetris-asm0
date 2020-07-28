@@ -28,4 +28,9 @@ Runtime dependencies refers to dependencies which must be linked and are *not* s
 
 ## Results
 
-![alt text](./images/sp
+![alt text](./images/speed_line.png)
+![alt text](./images/speed_bar.png)
+![alt text](./images/memory_bar.png)
+
+
+### 
