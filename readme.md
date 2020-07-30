@@ -36,4 +36,4 @@ Runtime dependencies refers to dependencies which must be linked and are *not* s
 ### mxnet
 - Github [link](https://github.com/apache/incubator-mxnet)
 - git release tag: `1.8.0.rc3`
-- Using MKL backend, download instructions [here](https://software.intel
+- Using MKL backend, download instructions [here](https://software.intel.com/content/www/us/en/develop/articles/installing-intel-oneapi-toolkits-via-apt.
