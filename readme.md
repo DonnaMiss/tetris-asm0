@@ -41,4 +41,5 @@ Runtime dependencies refers to dependencies which must be linked and are *not* s
 - Runtime dependencies: `libmkl_rt.so libomp.so libpthread.so`
 - Maintains output integrity: yes
 
-| Number of threads     | Average inferen
+| Number of threads     | Average inference speed   | Memory usage  |
+|-------------------    |-------------------------
