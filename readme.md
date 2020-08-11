@@ -43,4 +43,6 @@ Runtime dependencies refers to dependencies which must be linked and are *not* s
 
 | Number of threads     | Average inference speed   | Memory usage  |
 |-------------------    |-------------------------  |-------------- |
-| 1                     | 352 ms                    | 0.
+| 1                     | 352 ms                    | 0.52 Gb       |
+| 2                     | 188 ms                    | 0.52 Gb       |
+| 3       
