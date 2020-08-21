@@ -49,4 +49,5 @@ Runtime dependencies refers to dependencies which must be linked and are *not* s
 | 4                     | 108 ms                    | 0.53 Gb       |
 | 5                     | 93 ms                     | 0.52 Gb       |
 | 6                     | 82 ms                     | 0.52 Gb       |
-| 7                     | 74 ms                     | 0
+| 7                     | 74 ms                     | 0.52 Gb       |
+| 8                     | 68 ms                   
