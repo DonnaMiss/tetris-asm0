@@ -57,4 +57,5 @@ Runtime dependencies refers to dependencies which must be linked and are *not* s
 
 ### ncnn
 - Github [link](https://github.com/Tencent/ncnn)
-- git release 
+- git release hash: `5e4ea0b`
+- CMake build arguments: `-D NCNN_BUILD_EXAMPLES=OFF -D NCNN_VULKAN=
