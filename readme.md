@@ -62,4 +62,5 @@ Runtime dependencies refers to dependencies which must be linked and are *not* s
 - Runtime dependencies: `libomp.so`
 - Maintains output integrity: yes
 
-| Number of threads 	| Average inference spee
+| Number of threads 	| Average inference speed 	| Memory usage 	|
+|-------------------	|-------------------------	|-------------
