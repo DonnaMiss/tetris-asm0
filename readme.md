@@ -63,4 +63,6 @@ Runtime dependencies refers to dependencies which must be linked and are *not* s
 - Maintains output integrity: yes
 
 | Number of threads 	| Average inference speed 	| Memory usage 	|
-|-------------------	|-------------------------	|-------------
+|-------------------	|-------------------------	|--------------	|
+| 1                 	| 332 ms                  	| 1.72 Gb      	|
+| 2    
