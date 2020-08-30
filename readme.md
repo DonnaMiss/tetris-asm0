@@ -59,4 +59,7 @@ Runtime dependencies refers to dependencies which must be linked and are *not* s
 - Github [link](https://github.com/Tencent/ncnn)
 - git release hash: `5e4ea0b`
 - CMake build arguments: `-D NCNN_BUILD_EXAMPLES=OFF -D NCNN_VULKAN=OFF -D NCNN_AVX2=ON -D CMAKE_BUILD_TYPE=Release`
-- Runtime dependencies
+- Runtime dependencies: `libomp.so`
+- Maintains output integrity: yes
+
+| Number of threads 	| Average inference spee
