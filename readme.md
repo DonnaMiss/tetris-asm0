@@ -79,4 +79,5 @@ Runtime dependencies refers to dependencies which must be linked and are *not* s
 ### OpenVINO
 - Github [link](https://github.com/openvinotoolkit/openvino)
 - git release tag: `tags/2021.2`
-- Using MK
+- Using MKL-DNN CPU plugin.
+- Model optimization run with following options: `python3 mo_
