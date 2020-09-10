@@ -77,4 +77,6 @@ Runtime dependencies refers to dependencies which must be linked and are *not* s
 | Unrestricted (20) 	| 66 ms                   	| 1.72 Gb      	|
 
 ### OpenVINO
-- Github [link](https://github.com/
+- Github [link](https://github.com/openvinotoolkit/openvino)
+- git release tag: `tags/2021.2`
+- Using MK
