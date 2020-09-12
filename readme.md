@@ -80,4 +80,4 @@ Runtime dependencies refers to dependencies which must be linked and are *not* s
 - Github [link](https://github.com/openvinotoolkit/openvino)
 - git release tag: `tags/2021.2`
 - Using MKL-DNN CPU plugin.
-- Model optimization run with following options: `python3 mo_
+- Model optimization run with following options: `python3 mo_mxnet.py --input_model ./mxnet-0000.params --input_shape [1,3,112,112] -reverse_input_chann
