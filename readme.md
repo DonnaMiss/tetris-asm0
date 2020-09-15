@@ -82,4 +82,5 @@ Runtime dependencies refers to dependencies which must be linked and are *not* s
 - Using MKL-DNN CPU plugin.
 - Model optimization run with following options: `python3 mo_mxnet.py --input_model ./mxnet-0000.params --input_shape [1,3,112,112] -reverse_input_channels`
 - CMake build arguments: `-DCMAKE_BUILD_TYPE=Release`
-- Runtime dependencies: `libinference_engine.so libngraph.so libinference_engine_transformations
+- Runtime dependencies: `libinference_engine.so libngraph.so libinference_engine_transformations.so libtbb.so.2 libpthread.so.0 libMKLDNNPlugin.so`
+- Maintains output integ
