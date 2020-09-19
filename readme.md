@@ -85,4 +85,5 @@ Runtime dependencies refers to dependencies which must be linked and are *not* s
 - Runtime dependencies: `libinference_engine.so libngraph.so libinference_engine_transformations.so libtbb.so.2 libpthread.so.0 libMKLDNNPlugin.so`
 - Maintains output integrity: no, output is slightly different due to model optimization.
 
-| Number of
+| Number of threads     | Average inference speed   | Memory usage  |
+|-------------------    |-
