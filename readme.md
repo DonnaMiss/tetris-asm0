@@ -100,4 +100,5 @@ Runtime dependencies refers to dependencies which must be linked and are *not* s
 | Unrestricted (10)     | 46 ms                     | 0.57 Gb       |
 
 ### onnx-runtime 
-- Github [link](https://github.co
+- Github [link](https://github.com/microsoft/onnxruntime)
+- git release hash: `718ca7f` - v1.6
