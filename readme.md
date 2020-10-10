@@ -103,4 +103,6 @@ Runtime dependencies refers to dependencies which must be linked and are *not* s
 - Github [link](https://github.com/microsoft/onnxruntime)
 - git release hash: `718ca7f` - v1.6.0
 - `GraphOptimizationLevel::ORT_ENABLE_ALL` optimization level
-- Maintains output integrity
+- Maintains output integrity: yes
+- **Default CPU**
+- Runtime dependencies: `libonnxruntime.so.1.6.0 lib
