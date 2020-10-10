@@ -108,4 +108,5 @@ Runtime dependencies refers to dependencies which must be linked and are *not* s
 - Runtime dependencies: `libonnxruntime.so.1.6.0 libgomp.so.1`
 
 | Number of threads 	| Average inference speed 	| Memory usage 	|
-|-------------------	|---
+|-------------------	|-------------------------	|--------------	|
+| 1                 	| 311 ms                  
