@@ -123,4 +123,6 @@ Runtime dependencies refers to dependencies which must be linked and are *not* s
 
 ## AMD Results
 Intel is known for throttling their MKL library for AMD CPUs. 
-It i
+It is therefore important to measure the latency on AMD CPUs, shown below: 
+
+![alt te
