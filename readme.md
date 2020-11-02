@@ -129,4 +129,5 @@ It is therefore important to measure the latency on AMD CPUs, shown below:
 ![alt text](./images/amd_epyc.png)
 
 
-<!-- MARKDOWN L
+<!-- MARKDOWN LINKS & IMAGES -->
+<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
