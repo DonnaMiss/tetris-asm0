@@ -131,3 +131,5 @@ It is therefore important to measure the latency on AMD CPUs, shown below:
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+
+[stars-shield]: https://img.shields.io/github/stars/getchui/deep_learning_infe
