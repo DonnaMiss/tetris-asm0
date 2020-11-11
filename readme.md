@@ -135,4 +135,4 @@ It is therefore important to measure the latency on AMD CPUs, shown below:
 [stars-shield]: https://img.shields.io/github/stars/getchui/deep_learning_inference_framework_benchmarks.svg?style=flat-square
 [stars-url]: https://github.com/getchui/deep_learning_inference_framework_benchmarks/stargazers
 [issues-shield]: https://img.shields.io/github/issues/getchui/deep_learning_inference_framework_benchmarks.svg?style=flat-square
-[issues-url]: https://github.com/getchui/deep_learning_inference_
+[issues-url]: https://github.com/getchui/deep_learning_inference_framework_benchmarks/issues
