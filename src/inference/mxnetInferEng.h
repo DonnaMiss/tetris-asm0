@@ -4,4 +4,6 @@
 #include "mxnet-cpp/MxNetCpp.h"
 using namespace mxnet::cpp;
 
-class InferenceEng : Inferen
+class InferenceEng : InferenceEngineTemplate {
+public:
+    InferenceEng(const std::string& model
