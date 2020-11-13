@@ -1,4 +1,7 @@
 #pragma once
 
 #include "inferenceEngineTemplate.h"
-#include "mxnet
+#include "mxnet-cpp/MxNetCpp.h"
+using namespace mxnet::cpp;
+
+class InferenceEng : Inferen
