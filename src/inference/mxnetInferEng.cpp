@@ -40,3 +40,28 @@ InferenceEng::InferenceEng(const std::string &modelDir)
         else
             continue;
     }
+    NDArray::WaitAll();
+
+    m_argsMap["data"] = NDArray(Shape(1, 3, 112, 112), m_globalCtx, false);
+    m_executor = m_net.SimpleBind(
+            m_globalCtx, m_argsMap, std::map<std::string, NDArray>(),
+            std::map<std::string, OpReqType>(), m_auxMap);
+}
+
+InferenceEng::~InferenceEng() noexcept {
+        delete m_executor;
+}
+
+void InferenceEng::runInference(const cv::Mat &rgbImage, std::array<float, 500> &output) {
+    auto data = matToNDArray(rgbImage, m_globalCtx);
+    data.CopyTo(&(m_executor->arg_dict()["data"]));
+    NDArray::WaitAll();
+
+    m_executor->Forward(false);
+    auto embedding = m_executor->outputs[0].Copy(m_globalCtx);
+    NDArray::WaitAll();
+
+    for (size_t i = 0; i < output.size(); ++i) {
+        output[i] = embedding.At(0, i);
+    }
+}
