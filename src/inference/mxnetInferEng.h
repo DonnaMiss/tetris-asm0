@@ -6,4 +6,6 @@ using namespace mxnet::cpp;
 
 class InferenceEng : InferenceEngineTemplate {
 public:
-    InferenceEng(const std::string& model
+    InferenceEng(const std::string& modelDir);
+    ~InferenceEng();
+    void runInference(const cv::Mat& rgbImage, std::array<fl
