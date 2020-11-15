@@ -8,4 +8,6 @@ class InferenceEng : InferenceEngineTemplate {
 public:
     InferenceEng(const std::string& modelDir);
     ~InferenceEng();
-    void runInference(const cv::Mat& rgbImage, std::array<fl
+    void runInference(const cv::Mat& rgbImage, std::array<float, 500>& output) override;
+private:
+    inline NDArray matToNDArray(cv::Mat r
