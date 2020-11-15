@@ -10,4 +10,5 @@ public:
     ~InferenceEng();
     void runInference(const cv::Mat& rgbImage, std::array<float, 500>& output) override;
 private:
-    inline NDArray matToNDArray(cv::Mat r
+    inline NDArray matToNDArray(cv::Mat rgb_image, Context ctx = Context::cpu());
+    std::map<std::str
