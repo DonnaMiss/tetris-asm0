@@ -17,4 +17,5 @@ private:
     mxnet::cpp::Executor *m_executor = nullptr;
     mxnet::cpp::Symbol m_net;
 
-    const st
+    const std::string JSON_NAME = "mxnet.json";
+    const std::string PARAMS_NAME = "mx
