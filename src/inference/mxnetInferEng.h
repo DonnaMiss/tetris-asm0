@@ -18,4 +18,6 @@ private:
     mxnet::cpp::Symbol m_net;
 
     const std::string JSON_NAME = "mxnet.json";
-    const std::string PARAMS_NAME = "mx
+    const std::string PARAMS_NAME = "mxnet.params";
+};
+
