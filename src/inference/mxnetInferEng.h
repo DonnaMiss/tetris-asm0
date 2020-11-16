@@ -14,4 +14,7 @@ private:
     std::map<std::string, mxnet::cpp::NDArray> m_argsMap;
     std::map<std::string, mxnet::cpp::NDArray> m_auxMap;
     mxnet::cpp::Context m_globalCtx;
-    mxnet::cpp::Executo
+    mxnet::cpp::Executor *m_executor = nullptr;
+    mxnet::cpp::Symbol m_net;
+
+    const st
