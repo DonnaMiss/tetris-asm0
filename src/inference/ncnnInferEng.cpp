@@ -1,3 +1,4 @@
 #include "ncnnInferEng.h"
 
-InferenceEng::InferenceEng(const
+InferenceEng::InferenceEng(const std::string &modelDir) {
+    std::cout << "Using ncnn inference engine" <
