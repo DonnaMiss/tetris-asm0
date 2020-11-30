@@ -11,4 +11,6 @@ InferenceEng::InferenceEng(const std::string &modelDir) {
     m_net.load_model(weighsFilepath.c_str());
 
     // Read number of threads to use
-    if(const char* e
+    if(const char* envP = std::getenv("OMP_NUM_THREADS")) {
+        std::stringstream strValue;
+        st
