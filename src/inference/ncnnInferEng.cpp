@@ -6,4 +6,6 @@ InferenceEng::InferenceEng(const std::string &modelDir) {
     std::cout << "-------------------------------------------------" << std::endl;
 
     const std::string paramFilepath = modelDir + PARAMS_NAME;
-    const std::string weighsFilepath = mo
+    const std::string weighsFilepath = modelDir + WEIGHTS_NAME;
+    m_net.load_param(paramFilepath.c_str());
+    m_net.load_model(weigh
