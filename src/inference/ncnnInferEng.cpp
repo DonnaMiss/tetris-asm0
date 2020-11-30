@@ -8,4 +8,7 @@ InferenceEng::InferenceEng(const std::string &modelDir) {
     const std::string paramFilepath = modelDir + PARAMS_NAME;
     const std::string weighsFilepath = modelDir + WEIGHTS_NAME;
     m_net.load_param(paramFilepath.c_str());
-    m_net.load_model(weigh
+    m_net.load_model(weighsFilepath.c_str());
+
+    // Read number of threads to use
+    if(const char* e
