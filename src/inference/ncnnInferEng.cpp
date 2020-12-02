@@ -13,4 +13,9 @@ InferenceEng::InferenceEng(const std::string &modelDir) {
     // Read number of threads to use
     if(const char* envP = std::getenv("OMP_NUM_THREADS")) {
         std::stringstream strValue;
-        st
+        strValue << envP;
+        strValue >> m_numThreads;
+    }
+}
+
+void Inference
