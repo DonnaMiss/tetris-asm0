@@ -18,4 +18,5 @@ InferenceEng::InferenceEng(const std::string &modelDir) {
     }
 }
 
-void Inference
+void InferenceEng::runInference(const cv::Mat& rgbImage, std::array<float, 500>& output) {
+    
