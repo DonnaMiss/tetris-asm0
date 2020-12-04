@@ -19,4 +19,8 @@ InferenceEng::InferenceEng(const std::string &modelDir) {
 }
 
 void InferenceEng::runInference(const cv::Mat& rgbImage, std::array<float, 500>& output) {
-    auto in = ncnn::Mat::from_pixels(rgbImage.data, ncnn::Mat::PIXEL_RGB, rgbImage.cols, rgbIm
+    auto in = ncnn::Mat::from_pixels(rgbImage.data, ncnn::Mat::PIXEL_RGB, rgbImage.cols, rgbImage.rows);
+
+    auto ex = m_net.create_extractor();
+    if (m_numThreads > 0) {
+       
