@@ -23,4 +23,8 @@ void InferenceEng::runInference(const cv::Mat& rgbImage, std::array<float, 500>&
 
     auto ex = m_net.create_extractor();
     if (m_numThreads > 0) {
-       
+        ex.set_num_threads(m_numThreads);
+    }
+
+    ex.input("data", in);
+    ncnn::Mat out
