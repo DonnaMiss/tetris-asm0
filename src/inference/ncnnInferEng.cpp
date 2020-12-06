@@ -27,4 +27,8 @@ void InferenceEng::runInference(const cv::Mat& rgbImage, std::array<float, 500>&
     }
 
     ex.input("data", in);
-    ncnn::Mat out
+    ncnn::Mat out;
+    ex.extract("fc1", out);
+
+    for (int i = 0; i < out.w; ++i) {
+        output[i] 
