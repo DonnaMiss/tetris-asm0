@@ -13,3 +13,5 @@ private:
     int m_numThreads = -1;
 
     const std::string WEIGHTS_NAME = "ncnn.bin";
+    const std::string PARAMS_NAME = "ncnn.param";
+};
