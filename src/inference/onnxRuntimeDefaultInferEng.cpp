@@ -9,4 +9,6 @@ InferenceEng::InferenceEng(const std::string &modelDir) {
     m_envPtr = std::make_unique<Ort::Env>(ORT_LOGGING_LEVEL_WARNING, "test");
     m_options.SetInterOpNumThreads(1);
 
-    // Sets graph opt
+    // Sets graph optimization level
+    // Available levels are
+    // ORT_DISABLE_ALL -> To dis
