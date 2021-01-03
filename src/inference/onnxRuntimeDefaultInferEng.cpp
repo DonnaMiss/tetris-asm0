@@ -11,4 +11,5 @@ InferenceEng::InferenceEng(const std::string &modelDir) {
 
     // Sets graph optimization level
     // Available levels are
-    // ORT_DISABLE_ALL -> To dis
+    // ORT_DISABLE_ALL -> To disable all optimizations
+    // ORT_ENABLE_BASIC -> To enable basic optimizations (Su
