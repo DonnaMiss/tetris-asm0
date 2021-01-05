@@ -12,4 +12,5 @@ InferenceEng::InferenceEng(const std::string &modelDir) {
     // Sets graph optimization level
     // Available levels are
     // ORT_DISABLE_ALL -> To disable all optimizations
-    // ORT_ENABLE_BASIC -> To enable basic optimizations (Su
+    // ORT_ENABLE_BASIC -> To enable basic optimizations (Such as redundant node removals)
+    // ORT_ENABLE_EXTENDED -> To enable extended optim
