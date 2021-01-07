@@ -18,4 +18,8 @@ InferenceEng::InferenceEng(const std::string &modelDir) {
     m_options.SetGraphOptimizationLevel(GraphOptimizationLevel::ORT_ENABLE_ALL);
 
     const std::string modelPath = modelDir + MODEL_NAME;
-    m_sessionPtr = std::make_unique<Ort::Session>(*m_envPtr, modelPath.c_str(
+    m_sessionPtr = std::make_unique<Ort::Session>(*m_envPtr, modelPath.c_str(), m_options);
+}
+
+inline std::vector<float> rgbImgToFloatArr(cv::Mat rgb_image) {
+    std:
