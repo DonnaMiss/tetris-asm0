@@ -22,4 +22,8 @@ InferenceEng::InferenceEng(const std::string &modelDir) {
 }
 
 inline std::vector<float> rgbImgToFloatArr(cv::Mat rgb_image) {
-    std:
+    std::vector<float> data_buffer;
+
+    // hwc to chw conversion
+    for (int c = 0; c < 3; ++c) {
+     
