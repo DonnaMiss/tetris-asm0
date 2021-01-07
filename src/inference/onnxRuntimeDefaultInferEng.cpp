@@ -17,4 +17,5 @@ InferenceEng::InferenceEng(const std::string &modelDir) {
     // ORT_ENABLE_ALL -> To Enable All possible opitmizations
     m_options.SetGraphOptimizationLevel(GraphOptimizationLevel::ORT_ENABLE_ALL);
 
-    const std::string modelPath = modelDi
+    const std::string modelPath = modelDir + MODEL_NAME;
+    m_sessionPtr = std::make_unique<Ort::Session>(*m_envPtr, modelPath.c_str(
