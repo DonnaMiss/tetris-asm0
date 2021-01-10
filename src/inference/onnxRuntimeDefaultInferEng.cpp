@@ -26,4 +26,5 @@ inline std::vector<float> rgbImgToFloatArr(cv::Mat rgb_image) {
 
     // hwc to chw conversion
     for (int c = 0; c < 3; ++c) {
-     
+        for (int i = 0; i < rgb_image.rows; ++i) {
+            for (int 
