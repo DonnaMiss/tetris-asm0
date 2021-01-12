@@ -33,4 +33,7 @@ inline std::vector<float> rgbImgToFloatArr(cv::Mat rgb_image) {
         }
     }
 
- 
+    return data_buffer;
+}
+
+void InferenceEng::runInference(const cv::Mat& 
