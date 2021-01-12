@@ -28,4 +28,9 @@ inline std::vector<float> rgbImgToFloatArr(cv::Mat rgb_image) {
     for (int c = 0; c < 3; ++c) {
         for (int i = 0; i < rgb_image.rows; ++i) {
             for (int j = 0; j < rgb_image.cols; ++j) {
-                data_buffer.push_back(static_cast<float>(rgb
+                data_buffer.push_back(static_cast<float>(rgb_image.data[(i * rgb_image.cols + j) * 3 + c]));
+            }
+        }
+    }
+
+ 
