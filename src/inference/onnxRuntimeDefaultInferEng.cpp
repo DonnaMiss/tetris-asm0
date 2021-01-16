@@ -43,4 +43,7 @@ void InferenceEng::runInference(const cv::Mat& rgbImage, std::array<float, 500>&
 
     std::vector<const char*> outputNodeNames = {"fc1"};
     std::vector<const char*> inputNodeNames = {"data"};
-    std::vector<int64_t> inputNodeDims = {1, 3, 112
+    std::vector<int64_t> inputNodeDims = {1, 3, 112, 112};
+
+    // create input tensor object from data values
+    auto memory
