@@ -37,4 +37,8 @@ inline std::vector<float> rgbImgToFloatArr(cv::Mat rgb_image) {
 }
 
 void InferenceEng::runInference(const cv::Mat& rgbImage, std::array<float, 500>& output) {
-    auto imgRgbFloat = rgbIm
+    auto imgRgbFloat = rgbImgToFloatArr(rgbImage);
+
+    size_t inputTensorSize = 112 * 112 * 3;
+
+    std::vector
