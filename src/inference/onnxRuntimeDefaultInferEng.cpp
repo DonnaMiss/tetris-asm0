@@ -50,4 +50,7 @@ void InferenceEng::runInference(const cv::Mat& rgbImage, std::array<float, 500>&
 
     Ort::Value input_tensor = Ort::Value::CreateTensor<float>(memory_info, reinterpret_cast<float*>(imgRgbFloat.data()), inputTensorSize, inputNodeDims.data(), inputNodeDims.size());
     if (!input_tensor.IsTensor()) {
-        throw std::runti
+        throw std::runtime_error("Input is not a tensor");
+    }
+
+    // score model & input tensor, get back outp
