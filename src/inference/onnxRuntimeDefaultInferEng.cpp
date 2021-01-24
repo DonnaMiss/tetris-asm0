@@ -48,4 +48,6 @@ void InferenceEng::runInference(const cv::Mat& rgbImage, std::array<float, 500>&
     // create input tensor object from data values
     auto memory_info = Ort::MemoryInfo::CreateCpu(OrtArenaAllocator, OrtMemTypeDefault);
 
-    Ort::Value input_tensor = Ort::Value::CreateTensor<float>(memory_info, reinterpret_cast<float*>(imgRgbFloat.data()), inputTensorSize, inputNodeDims.data(), inpu
+    Ort::Value input_tensor = Ort::Value::CreateTensor<float>(memory_info, reinterpret_cast<float*>(imgRgbFloat.data()), inputTensorSize, inputNodeDims.data(), inputNodeDims.size());
+    if (!input_tensor.IsTensor()) {
+        throw std::runti
