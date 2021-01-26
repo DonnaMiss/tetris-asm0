@@ -53,4 +53,5 @@ void InferenceEng::runInference(const cv::Mat& rgbImage, std::array<float, 500>&
         throw std::runtime_error("Input is not a tensor");
     }
 
-    // score model & input tensor, get back outp
+    // score model & input tensor, get back output tensor
+    auto outputTensor = m_sessionPtr->Run(Ort::RunOptions{nu
