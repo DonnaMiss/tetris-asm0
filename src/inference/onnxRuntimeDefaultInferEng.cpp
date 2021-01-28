@@ -54,4 +54,5 @@ void InferenceEng::runInference(const cv::Mat& rgbImage, std::array<float, 500>&
     }
 
     // score model & input tensor, get back output tensor
-    auto outputTensor = m_sessionPtr->Run(Ort::RunOptions{nu
+    auto outputTensor = m_sessionPtr->Run(Ort::RunOptions{nullptr}, inputNodeNames.data(), &input_tensor, 1, outputNodeNames.data(), 1);
+    if (outpu
