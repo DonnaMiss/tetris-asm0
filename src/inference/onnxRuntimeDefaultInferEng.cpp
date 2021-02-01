@@ -56,4 +56,8 @@ void InferenceEng::runInference(const cv::Mat& rgbImage, std::array<float, 500>&
     // score model & input tensor, get back output tensor
     auto outputTensor = m_sessionPtr->Run(Ort::RunOptions{nullptr}, inputNodeNames.data(), &input_tensor, 1, outputNodeNames.data(), 1);
     if (outputTensor.size() != 1 || !outputTensor.front().IsTensor()) {
-        throw std::runtime_e
+        throw std::runtime_error("Error is not a tensor");
+    }
+
+    // Get pointer to output tensor float values
+  
