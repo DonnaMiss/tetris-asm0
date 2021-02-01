@@ -60,4 +60,7 @@ void InferenceEng::runInference(const cv::Mat& rgbImage, std::array<float, 500>&
     }
 
     // Get pointer to output tensor float values
-    float* floatarr = outputTensor.front().GetTensorMutable
+    float* floatarr = outputTensor.front().GetTensorMutableData<float>();
+
+    for (int i = 0; i < 500; ++i) {
+        output[i] = floatarr
