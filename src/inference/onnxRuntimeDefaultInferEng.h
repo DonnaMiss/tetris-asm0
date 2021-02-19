@@ -10,4 +10,7 @@ class InferenceEng : InferenceEngineTemplate {
 public:
     InferenceEng(const std::string& modelDir);
     ~InferenceEng() = default;
-    void runInference(const cv::Mat& rgbImage, std::array<float, 
+    void runInference(const cv::Mat& rgbImage, std::array<float, 500>& output) override;
+private:
+    const std::string MODEL_NAME = "model.onnx";
+    
