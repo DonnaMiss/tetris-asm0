@@ -4,4 +4,6 @@
 #include "inferenceEngineTemplate.h"
 #include "onnxruntime_cxx_api.h"
 
-// Sample code here: https://github.com/microsoft/onnxruntime/blob/master/csharp/test/Microsoft.ML.OnnxRuntime.EndToEndTests.C
+// Sample code here: https://github.com/microsoft/onnxruntime/blob/master/csharp/test/Microsoft.ML.OnnxRuntime.EndToEndTests.Capi/CXX_Api_Sample.cpp#L24-L30
+
+class InferenceEng : InferenceEngineTempla
