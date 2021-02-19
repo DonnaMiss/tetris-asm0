@@ -15,4 +15,6 @@ private:
     const std::string MODEL_NAME = "model.onnx";
     std::unique_ptr<Ort::Session> m_sessionPtr;
     std::unique_ptr<Ort::Env> m_envPtr;
-    Ort::SessionOpt
+    Ort::SessionOptions m_options;
+    Ort::AllocatorWithDefaultOptions allocator;
+    std::vector<const char*> m_n
