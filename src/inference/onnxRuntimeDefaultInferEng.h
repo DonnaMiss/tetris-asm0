@@ -17,4 +17,6 @@ private:
     std::unique_ptr<Ort::Env> m_envPtr;
     Ort::SessionOptions m_options;
     Ort::AllocatorWithDefaultOptions allocator;
-    std::vector<const char*> m_n
+    std::vector<const char*> m_nodeNames;
+    std::vector<int64_t> m_inputNodeDims;
+};
