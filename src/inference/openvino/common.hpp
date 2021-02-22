@@ -14,4 +14,8 @@
 #include <vector>
 #include <list>
 #include <limits>
-#include <functio
+#include <functional>
+#include <fstream>
+#include <iomanip>
+#include <utility>
+#include <algorithm
