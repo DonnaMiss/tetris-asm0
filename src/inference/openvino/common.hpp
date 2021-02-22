@@ -3,4 +3,11 @@
 //
 
 /**
- * @brief a header file with common samp
+ * @brief a header file with common samples functionality
+ * @file common.hpp
+ */
+
+#pragma once
+
+#include <string>
+#inclu
