@@ -18,4 +18,10 @@
 #include <fstream>
 #include <iomanip>
 #include <utility>
-#include <algorithm
+#include <algorithm>
+#include <random>
+
+#include <inference_engine.hpp>
+
+#ifndef UNUSED
+  #if defined (
