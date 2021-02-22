@@ -24,4 +24,7 @@
 #include <inference_engine.hpp>
 
 #ifndef UNUSED
-  #if defined (
+  #if defined (_MSC_VER) && !defined (__clang__)
+    #define UNUSED
+  #else
+    #defin
