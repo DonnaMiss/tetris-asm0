@@ -27,4 +27,9 @@
   #if defined (_MSC_VER) && !defined (__clang__)
     #define UNUSED
   #else
-    #defin
+    #define UNUSED  __attribute__((unused))
+  #endif
+#endif
+
+/**
+ * @brief trim fr
