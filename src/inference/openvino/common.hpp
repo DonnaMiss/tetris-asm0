@@ -32,4 +32,7 @@
 #endif
 
 /**
- * @brief trim fr
+ * @brief trim from start (in place)
+ * @param s - string to trim
+ */
+inline void ltrim(st
