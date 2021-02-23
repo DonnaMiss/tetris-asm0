@@ -36,4 +36,10 @@
  * @param s - string to trim
  */
 inline void ltrim(std::string &s) {
-    s.erase(s.begin(), std::find_if(s.begin(), s.end(), [
+    s.erase(s.begin(), std::find_if(s.begin(), s.end(), [](int c){
+        return !std::isspace(c);
+    }));
+}
+
+/**
+ * @brief trim from end (in p
