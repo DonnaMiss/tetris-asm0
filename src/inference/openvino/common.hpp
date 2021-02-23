@@ -35,4 +35,5 @@
  * @brief trim from start (in place)
  * @param s - string to trim
  */
-inline void ltrim(st
+inline void ltrim(std::string &s) {
+    s.erase(s.begin(), std::find_if(s.begin(), s.end(), [
