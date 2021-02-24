@@ -42,4 +42,7 @@ inline void ltrim(std::string &s) {
 }
 
 /**
- * @brief trim from end (in p
+ * @brief trim from end (in place)
+ * @param s - string to trim
+ */
+inline void rtrim(std::string
