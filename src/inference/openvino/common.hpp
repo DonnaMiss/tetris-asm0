@@ -45,4 +45,6 @@ inline void ltrim(std::string &s) {
  * @brief trim from end (in place)
  * @param s - string to trim
  */
-inline void rtrim(std::string
+inline void rtrim(std::string &s) {
+    s.erase(std::find_if(s.rbegin(), s.rend(), [](int c) {
+        return 
