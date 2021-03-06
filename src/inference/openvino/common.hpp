@@ -47,4 +47,9 @@ inline void ltrim(std::string &s) {
  */
 inline void rtrim(std::string &s) {
     s.erase(std::find_if(s.rbegin(), s.rend(), [](int c) {
-        return 
+        return !std::isspace(c);
+    }).base(), s.end());
+}
+
+/**
+ * @brief trim from both ends (in p
