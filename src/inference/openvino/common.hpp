@@ -61,4 +61,6 @@ inline std::string &trim(std::string &s) {
     return s;
 }
 /**
- * @brief Gets file
+ * @brief Gets filename without extension
+ * @param filepath - full file name
+ * @return file
