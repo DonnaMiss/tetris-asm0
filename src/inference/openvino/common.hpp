@@ -55,4 +55,10 @@ inline void rtrim(std::string &s) {
  * @brief trim from both ends (in place)
  * @param s - string to trim
  */
-inline std::string &trim(std::string &
+inline std::string &trim(std::string &s) {
+    ltrim(s);
+    rtrim(s);
+    return s;
+}
+/**
+ * @brief Gets file
