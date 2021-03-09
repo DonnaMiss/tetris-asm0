@@ -65,4 +65,6 @@ inline std::string &trim(std::string &s) {
  * @param filepath - full file name
  * @return filename without extension
  */
-static UNUSED std::string fileNameNoExt(const std::string
+static UNUSED std::string fileNameNoExt(const std::string &filepath) {
+    auto pos = filepath.rfind('.');
+    if (pos == std::string::npos) re
