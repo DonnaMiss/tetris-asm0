@@ -67,4 +67,9 @@ inline std::string &trim(std::string &s) {
  */
 static UNUSED std::string fileNameNoExt(const std::string &filepath) {
     auto pos = filepath.rfind('.');
-    if (pos == std::string::npos) re
+    if (pos == std::string::npos) return filepath;
+    return filepath.substr(0, pos);
+}
+
+/**
+* @brief Get extension from fi
