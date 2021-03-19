@@ -77,3 +77,6 @@ static UNUSED std::string fileNameNoExt(const std::string &filepath) {
 * @return string with extracted file extension
 */
 inline std::string fileExt(const std::string& filename) {
+    auto pos = filename.rfind('.');
+    if (pos == std::string::npos) return "";
+  
