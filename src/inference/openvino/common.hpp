@@ -74,4 +74,6 @@ static UNUSED std::string fileNameNoExt(const std::string &filepath) {
 /**
 * @brief Get extension from filename
 * @param filename - name of the file which extension should be extracted
-* @return strin
+* @return string with extracted file extension
+*/
+inline std::string fileExt(const std::string& filename) {
