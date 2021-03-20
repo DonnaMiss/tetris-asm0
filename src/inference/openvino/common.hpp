@@ -79,4 +79,7 @@ static UNUSED std::string fileNameNoExt(const std::string &filepath) {
 inline std::string fileExt(const std::string& filename) {
     auto pos = filename.rfind('.');
     if (pos == std::string::npos) return "";
-  
+    return filename.substr(pos + 1);
+}
+
+static UNUSED std::ostream &ope
