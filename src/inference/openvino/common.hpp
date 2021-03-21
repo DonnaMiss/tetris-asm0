@@ -82,4 +82,5 @@ inline std::string fileExt(const std::string& filename) {
     return filename.substr(pos + 1);
 }
 
-static UNUSED std::ostream &ope
+static UNUSED std::ostream &operator<<(std::ostream &os, const InferenceEngine::Version *version) {
+    os << "\n\tAPI ver
