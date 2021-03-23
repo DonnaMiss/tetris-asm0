@@ -85,4 +85,6 @@ inline std::string fileExt(const std::string& filename) {
 static UNUSED std::ostream &operator<<(std::ostream &os, const InferenceEngine::Version *version) {
     os << "\n\tAPI version ............ ";
     if (nullptr == version) {
-        os << "U
+        os << "UNKNOWN";
+    } else {
+        os << version->apiVersion.major << "." << version->
