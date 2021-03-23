@@ -87,4 +87,5 @@ static UNUSED std::ostream &operator<<(std::ostream &os, const InferenceEngine::
     if (nullptr == version) {
         os << "UNKNOWN";
     } else {
-        os << version->apiVersion.major << "." << version->
+        os << version->apiVersion.major << "." << version->apiVersion.minor;
+        if (nullptr != version->buildNumber) {
