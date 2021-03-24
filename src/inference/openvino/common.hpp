@@ -98,4 +98,4 @@ static UNUSED std::ostream &operator<<(std::ostream &os, const InferenceEngine::
     return os;
 }
 
-in
+inline std::ostream &operator<<(std::ostream &os, const InferenceEngine::V
