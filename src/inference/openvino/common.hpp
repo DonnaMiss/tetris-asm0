@@ -89,3 +89,5 @@ static UNUSED std::ostream &operator<<(std::ostream &os, const InferenceEngine::
     } else {
         os << version->apiVersion.major << "." << version->apiVersion.minor;
         if (nullptr != version->buildNumber) {
+            os << "\n\t" << "Build .................. " << version->buildNumber;
+     
