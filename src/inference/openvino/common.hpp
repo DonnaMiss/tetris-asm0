@@ -92,4 +92,10 @@ static UNUSED std::ostream &operator<<(std::ostream &os, const InferenceEngine::
             os << "\n\t" << "Build .................. " << version->buildNumber;
         }
         if (nullptr != version->description) {
-            os <<
+            os << "\n\t" << "Description ....... " << version->description;
+        }
+    }
+    return os;
+}
+
+in
