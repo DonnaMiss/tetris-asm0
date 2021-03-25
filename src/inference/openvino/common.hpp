@@ -102,4 +102,10 @@ inline std::ostream &operator<<(std::ostream &os, const InferenceEngine::Version
     os << "\t" << version.description << " version ......... ";
     os << version.apiVersion.major << "." << version.apiVersion.minor;
 
-  
+    os << "\n\tBuild ........... ";
+    os << version.buildNumber;
+
+    return os;
+}
+
+inline std::
