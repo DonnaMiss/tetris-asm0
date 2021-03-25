@@ -98,4 +98,6 @@ static UNUSED std::ostream &operator<<(std::ostream &os, const InferenceEngine::
     return os;
 }
 
-inline std::ostream &operator<<(std::ostream &os, const InferenceEngine::V
+inline std::ostream &operator<<(std::ostream &os, const InferenceEngine::Version &version) {
+    os << "\t" << version.description << " version ......... ";
+   
