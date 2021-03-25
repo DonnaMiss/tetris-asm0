@@ -100,4 +100,6 @@ static UNUSED std::ostream &operator<<(std::ostream &os, const InferenceEngine::
 
 inline std::ostream &operator<<(std::ostream &os, const InferenceEngine::Version &version) {
     os << "\t" << version.description << " version ......... ";
-   
+    os << version.apiVersion.major << "." << version.apiVersion.minor;
+
+  
