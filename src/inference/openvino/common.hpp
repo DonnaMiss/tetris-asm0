@@ -108,4 +108,4 @@ inline std::ostream &operator<<(std::ostream &os, const InferenceEngine::Version
     return os;
 }
 
-inline std::
+inline std::ostream &operator<<(std::ostream &os, const std::map<std::string, InferenceEngine::Vers
