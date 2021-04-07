@@ -108,4 +108,6 @@ inline std::ostream &operator<<(std::ostream &os, const InferenceEngine::Version
     return os;
 }
 
-inline std::ostream &operator<<(std::ostream &os, const std::map<std::string, InferenceEngine::Vers
+inline std::ostream &operator<<(std::ostream &os, const std::map<std::string, InferenceEngine::Version> &versions) {
+    for (auto && version : versions) {
+        os << "\t" <<
