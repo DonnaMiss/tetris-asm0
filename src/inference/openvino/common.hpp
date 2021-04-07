@@ -114,4 +114,7 @@ inline std::ostream &operator<<(std::ostream &os, const std::map<std::string, In
         os << version.second << std::endl;
     }
 
-  
+    return os;
+}
+
+static UNUSED std::vector<std::vector<size_t>> blobToImageOutputArray(Inference
