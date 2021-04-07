@@ -110,4 +110,8 @@ inline std::ostream &operator<<(std::ostream &os, const InferenceEngine::Version
 
 inline std::ostream &operator<<(std::ostream &os, const std::map<std::string, InferenceEngine::Version> &versions) {
     for (auto && version : versions) {
-        os << "\t" <<
+        os << "\t" << version.first << std::endl;
+        os << version.second << std::endl;
+    }
+
+  
