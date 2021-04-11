@@ -117,4 +117,5 @@ inline std::ostream &operator<<(std::ostream &os, const std::map<std::string, In
     return os;
 }
 
-static UNUSED std::vector<std::vector<size_t>> blobToImageOutputArray(Inference
+static UNUSED std::vector<std::vector<size_t>> blobToImageOutputArray(InferenceEngine::TBlob<float>::Ptr output,
+                                         
