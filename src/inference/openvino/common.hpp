@@ -118,4 +118,5 @@ inline std::ostream &operator<<(std::ostream &os, const std::map<std::string, In
 }
 
 static UNUSED std::vector<std::vector<size_t>> blobToImageOutputArray(InferenceEngine::TBlob<float>::Ptr output,
-                                         
+                                                                      size_t *pWidth, size_t *pHeight,
+                                  
