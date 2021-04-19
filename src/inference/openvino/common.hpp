@@ -125,4 +125,7 @@ static UNUSED std::vector<std::vector<size_t>> blobToImageOutputArray(InferenceE
 
     auto outputDims = output->getTensorDesc().getDims();
     if (outputDims.size() == 3) {
-        C = outp
+        C = outputDims.at(0);
+        H = outputDims.at(1);
+        W = outputDims.at(2);
+    } else if (outpu
