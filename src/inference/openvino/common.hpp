@@ -128,4 +128,7 @@ static UNUSED std::vector<std::vector<size_t>> blobToImageOutputArray(InferenceE
         C = outputDims.at(0);
         H = outputDims.at(1);
         W = outputDims.at(2);
-    } else if (outpu
+    } else if (outputDims.size() == 4) {
+        C = outputDims.at(1);
+        H = outputDims.at(2);
+     
