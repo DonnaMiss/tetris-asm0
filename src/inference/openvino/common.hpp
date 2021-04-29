@@ -137,4 +137,9 @@ static UNUSED std::vector<std::vector<size_t>> blobToImageOutputArray(InferenceE
         H = outputDims.at(3);
         W = outputDims.at(4);
     } else {
-        THROW_IE_EXCEPTION << "Output blob has unsupported layout " << output->getTensor
+        THROW_IE_EXCEPTION << "Output blob has unsupported layout " << output->getTensorDesc().getLayout();
+    }
+
+    // Get classes
+    const float *outData = output->data();
+ 
