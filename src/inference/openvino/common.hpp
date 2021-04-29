@@ -142,4 +142,6 @@ static UNUSED std::vector<std::vector<size_t>> blobToImageOutputArray(InferenceE
 
     // Get classes
     const float *outData = output->data();
- 
+    for (unsigned h = 0; h < H; h++) {
+        std::vector<size_t> row;
+        for 
