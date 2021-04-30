@@ -146,4 +146,6 @@ static UNUSED std::vector<std::vector<size_t>> blobToImageOutputArray(InferenceE
         std::vector<size_t> row;
         for (unsigned w = 0; w < W; w++) {
             float max_value = outData[h * W + w];
-   
+            size_t index = 0;
+            for (size_t c = 1; c < C; c++) {
+                s
