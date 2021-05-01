@@ -154,4 +154,9 @@ static UNUSED std::vector<std::vector<size_t>> blobToImageOutputArray(InferenceE
                     max_value = outData[dataIndex];
                 }
             }
-            row.push
+            row.push_back(index);
+        }
+        outArray.push_back(row);
+    }
+
+    if (pWidth != nullptr) *
