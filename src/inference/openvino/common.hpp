@@ -151,4 +151,7 @@ static UNUSED std::vector<std::vector<size_t>> blobToImageOutputArray(InferenceE
                 size_t dataIndex = c * H * W + h * W + w;
                 if (outData[dataIndex] > max_value) {
                     index = c;
-                    max_v
+                    max_value = outData[dataIndex];
+                }
+            }
+            row.push
