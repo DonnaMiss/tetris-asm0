@@ -159,4 +159,6 @@ static UNUSED std::vector<std::vector<size_t>> blobToImageOutputArray(InferenceE
         outArray.push_back(row);
     }
 
-    if (pWidth != nullptr) *
+    if (pWidth != nullptr) *pWidth = W;
+    if (pHeight != nullptr) *pHeight = H;
+    if (pChannel
