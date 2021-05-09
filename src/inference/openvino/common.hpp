@@ -161,4 +161,11 @@ static UNUSED std::vector<std::vector<size_t>> blobToImageOutputArray(InferenceE
 
     if (pWidth != nullptr) *pWidth = W;
     if (pHeight != nullptr) *pHeight = H;
-    if (pChannel
+    if (pChannels != nullptr) *pChannels = C;
+
+    return outArray;
+}
+
+/**
+ * @class Color
+ * @b
