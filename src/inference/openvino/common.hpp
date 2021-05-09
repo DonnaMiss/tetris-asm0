@@ -168,4 +168,8 @@ static UNUSED std::vector<std::vector<size_t>> blobToImageOutputArray(InferenceE
 
 /**
  * @class Color
- * @b
+ * @brief A Color class stores channels of a given color
+ */
+class Color {
+private:
+    un
