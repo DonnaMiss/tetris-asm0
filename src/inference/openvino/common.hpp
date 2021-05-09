@@ -172,4 +172,10 @@ static UNUSED std::vector<std::vector<size_t>> blobToImageOutputArray(InferenceE
  */
 class Color {
 private:
-    un
+    unsigned char _r;
+    unsigned char _g;
+    unsigned char _b;
+
+public:
+    /**
+     * A d
