@@ -178,4 +178,6 @@ private:
 
 public:
     /**
-     * A d
+     * A default constructor.
+     * @param r - value for red channel
+     * @param g - val
