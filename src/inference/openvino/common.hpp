@@ -183,4 +183,6 @@ public:
      * @param g - value for green channel
      * @param b - value for blue channel
      */
-    
+    Color(unsigned char r,
+          unsigned char g,
+          unsigned char
