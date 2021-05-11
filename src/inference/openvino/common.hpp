@@ -180,4 +180,7 @@ public:
     /**
      * A default constructor.
      * @param r - value for red channel
-     * @param g - val
+     * @param g - value for green channel
+     * @param b - value for blue channel
+     */
+    
