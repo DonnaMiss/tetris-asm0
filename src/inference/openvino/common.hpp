@@ -188,4 +188,11 @@ public:
           unsigned char b) : _r(r), _g(g), _b(b) {}
 
     inline unsigned char red() {
-        return
+        return _r;
+    }
+
+    inline unsigned char blue() {
+        return _b;
+    }
+
+  
