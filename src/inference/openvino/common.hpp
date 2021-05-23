@@ -195,4 +195,9 @@ public:
         return _b;
     }
 
-  
+    inline unsigned char green() {
+        return _g;
+    }
+};
+
+// TODO : keep o
