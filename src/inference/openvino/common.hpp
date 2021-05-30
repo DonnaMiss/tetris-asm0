@@ -200,4 +200,8 @@ public:
     }
 };
 
-// TODO : keep o
+// TODO : keep only one version of writeOutputBMP
+
+/**
+ * @brief Writes output data to image
+ * @para
