@@ -204,4 +204,6 @@ public:
 
 /**
  * @brief Writes output data to image
- * @para
+ * @param name - image name
+ * @param data - output data
+ * @param classesNum - the number of classes
