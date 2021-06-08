@@ -207,3 +207,6 @@ public:
  * @param name - image name
  * @param data - output data
  * @param classesNum - the number of classes
+ * @return false if error else true
+ */
+static UNUSED void writeOutputBmp(std::v
