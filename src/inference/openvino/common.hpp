@@ -209,4 +209,6 @@ public:
  * @param classesNum - the number of classes
  * @return false if error else true
  */
-static UNUSED void writeOutputBmp(std::vector<std::vector<size_t>> data, size_t classesNum, std::ostream &outFi
+static UNUSED void writeOutputBmp(std::vector<std::vector<size_t>> data, size_t classesNum, std::ostream &outFile) {
+    unsigned int seed = (unsigned int) time(NULL);
+    // Known colors for traini
