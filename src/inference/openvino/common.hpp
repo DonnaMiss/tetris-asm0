@@ -209,4 +209,4 @@ public:
  * @param classesNum - the number of classes
  * @return false if error else true
  */
-static UNUSED void writeOutputBmp(std::v
+static UNUSED void writeOutputBmp(std::vector<std::vector<size_t>> data, size_t classesNum, std::ostream &outFi
