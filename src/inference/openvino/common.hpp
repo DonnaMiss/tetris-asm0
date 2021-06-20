@@ -211,4 +211,6 @@ public:
  */
 static UNUSED void writeOutputBmp(std::vector<std::vector<size_t>> data, size_t classesNum, std::ostream &outFile) {
     unsigned int seed = (unsigned int) time(NULL);
-    // Known colors for traini
+    // Known colors for training classes from Cityscape dataset
+    static std::vector<Color> colors = {
+       
