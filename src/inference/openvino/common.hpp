@@ -213,4 +213,7 @@ static UNUSED void writeOutputBmp(std::vector<std::vector<size_t>> data, size_t 
     unsigned int seed = (unsigned int) time(NULL);
     // Known colors for training classes from Cityscape dataset
     static std::vector<Color> colors = {
-       
+        {128, 64,  128},
+        {232, 35,  244},
+        {70,  70,  70},
+        {1
