@@ -216,4 +216,7 @@ static UNUSED void writeOutputBmp(std::vector<std::vector<size_t>> data, size_t 
         {128, 64,  128},
         {232, 35,  244},
         {70,  70,  70},
-        {1
+        {156, 102, 102},
+        {153, 153, 190},
+        {153, 153, 153},
+        {3
