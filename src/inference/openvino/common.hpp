@@ -229,4 +229,8 @@ static UNUSED void writeOutputBmp(std::vector<std::vector<size_t>> data, size_t 
         {142, 0,   0},
         {70,  0,   0},
         {100, 60,  0},
-        {90,  0,
+        {90,  0,   0},
+        {230, 0,   0},
+        {32,  11,  119},
+        {0,   74,  111},
+        {8
