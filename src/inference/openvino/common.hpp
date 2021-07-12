@@ -238,4 +238,5 @@ static UNUSED void writeOutputBmp(std::vector<std::vector<size_t>> data, size_t 
 
     while (classesNum > colors.size()) {
         static std::mt19937 rng(seed);
-        std::uniform_int_distribution<in
+        std::uniform_int_distribution<int> dist(0, 255);
+        Color color(dist(rng), dist(rng), dist(rng))
