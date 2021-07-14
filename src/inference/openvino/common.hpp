@@ -244,4 +244,6 @@ static UNUSED void writeOutputBmp(std::vector<std::vector<size_t>> data, size_t 
     }
 
     unsigned char file[14] = {
-  
+            'B', 'M',           // magic
+            0, 0, 0, 0,         // size in bytes
+    
