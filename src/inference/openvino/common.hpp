@@ -252,4 +252,6 @@ static UNUSED void writeOutputBmp(std::vector<std::vector<size_t>> data, size_t 
     };
     unsigned char info[40] = {
             40, 0, 0, 0,        // info hd size
-            0, 0, 0
+            0, 0, 0, 0,         // width
+            0, 0, 0, 0,         // height
+            1, 0,  
