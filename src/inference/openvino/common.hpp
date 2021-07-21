@@ -250,4 +250,6 @@ static UNUSED void writeOutputBmp(std::vector<std::vector<size_t>> data, size_t 
             0, 0,               // app data
             40 + 14, 0, 0, 0      // start of data offset
     };
-    unsig
+    unsigned char info[40] = {
+            40, 0, 0, 0,        // info hd size
+            0, 0, 0
