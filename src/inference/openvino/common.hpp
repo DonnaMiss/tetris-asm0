@@ -254,4 +254,5 @@ static UNUSED void writeOutputBmp(std::vector<std::vector<size_t>> data, size_t 
             40, 0, 0, 0,        // info hd size
             0, 0, 0, 0,         // width
             0, 0, 0, 0,         // height
-            1, 0,  
+            1, 0,               // number color planes
+            24, 0,              // bits per pix
