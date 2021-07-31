@@ -257,4 +257,6 @@ static UNUSED void writeOutputBmp(std::vector<std::vector<size_t>> data, size_t 
             1, 0,               // number color planes
             24, 0,              // bits per pixel
             0, 0, 0, 0,         // compression is none
-            0, 0, 0, 0,
+            0, 0, 0, 0,         // image bits size
+            0x13, 0x0B, 0, 0,   // horz resolution in pixel / m
+        
