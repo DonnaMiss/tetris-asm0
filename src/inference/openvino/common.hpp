@@ -259,4 +259,4 @@ static UNUSED void writeOutputBmp(std::vector<std::vector<size_t>> data, size_t 
             0, 0, 0, 0,         // compression is none
             0, 0, 0, 0,         // image bits size
             0x13, 0x0B, 0, 0,   // horz resolution in pixel / m
-        
+            0x13, 0x0B, 0, 0,   // vert resolution (0x03C3 = 96 dpi, 0x0B13 = 72 dpi
