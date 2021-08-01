@@ -261,4 +261,8 @@ static UNUSED void writeOutputBmp(std::vector<std::vector<size_t>> data, size_t 
             0x13, 0x0B, 0, 0,   // horz resolution in pixel / m
             0x13, 0x0B, 0, 0,   // vert resolution (0x03C3 = 96 dpi, 0x0B13 = 72 dpi)
             0, 0, 0, 0,         // #colors in palette
-            0, 0, 0,
+            0, 0, 0, 0,         // #important colors
+    };
+
+    auto height = data.size();
+    auto width =
