@@ -265,4 +265,6 @@ static UNUSED void writeOutputBmp(std::vector<std::vector<size_t>> data, size_t 
     };
 
     auto height = data.size();
-    auto width =
+    auto width = data.at(0).size();
+
+    if (height > (size_t) std::numeric_limits<int32_t>::max 
