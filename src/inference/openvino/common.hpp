@@ -267,4 +267,5 @@ static UNUSED void writeOutputBmp(std::vector<std::vector<size_t>> data, size_t 
     auto height = data.size();
     auto width = data.at(0).size();
 
-    if (height > (size_t) std::numeric_limits<int32_t>::max 
+    if (height > (size_t) std::numeric_limits<int32_t>::max || width > (size_t) std::numeric_limits<int32_t>::max) {
+        THROW_IE_EXCEPT
