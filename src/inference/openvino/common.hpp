@@ -268,4 +268,7 @@ static UNUSED void writeOutputBmp(std::vector<std::vector<size_t>> data, size_t 
     auto width = data.at(0).size();
 
     if (height > (size_t) std::numeric_limits<int32_t>::max || width > (size_t) std::numeric_limits<int32_t>::max) {
-        THROW_IE_EXCEPT
+        THROW_IE_EXCEPTION << "File size is too big: " << height << " X " << width;
+    }
+
+    int p
