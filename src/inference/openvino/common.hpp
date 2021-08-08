@@ -272,4 +272,5 @@ static UNUSED void writeOutputBmp(std::vector<std::vector<size_t>> data, size_t 
     }
 
     int padSize = static_cast<int>(4 - (width * 3) % 4) % 4;
-    int sizeData = static_ca
+    int sizeData = static_cast<int>(width * height * 3 + height * padSize);
+    int sizeAll = si
