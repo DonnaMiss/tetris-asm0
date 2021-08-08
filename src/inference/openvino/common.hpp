@@ -271,4 +271,5 @@ static UNUSED void writeOutputBmp(std::vector<std::vector<size_t>> data, size_t 
         THROW_IE_EXCEPTION << "File size is too big: " << height << " X " << width;
     }
 
-    int p
+    int padSize = static_cast<int>(4 - (width * 3) % 4) % 4;
+    int sizeData = static_ca
