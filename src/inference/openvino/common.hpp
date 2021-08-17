@@ -277,4 +277,7 @@ static UNUSED void writeOutputBmp(std::vector<std::vector<size_t>> data, size_t 
 
     file[2] = (unsigned char) (sizeAll);
     file[3] = (unsigned char) (sizeAll >> 8);
-    file[4] = (unsigned char)
+    file[4] = (unsigned char) (sizeAll >> 16);
+    file[5] = (unsigned char) (sizeAll >> 24);
+
+    info[4] = (unsigned char) (w
