@@ -285,4 +285,5 @@ static UNUSED void writeOutputBmp(std::vector<std::vector<size_t>> data, size_t 
     info[6] = (unsigned char) (width >> 16);
     info[7] = (unsigned char) (width >> 24);
 
-   
+    int32_t negativeHeight = -(int32_t) height;
+    info[8] = (unsigned char) (
