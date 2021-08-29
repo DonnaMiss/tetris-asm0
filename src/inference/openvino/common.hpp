@@ -297,4 +297,8 @@ static UNUSED void writeOutputBmp(std::vector<std::vector<size_t>> data, size_t 
     info[23] = (unsigned char) (sizeData >> 24);
 
     outFile.write(reinterpret_cast<char *>(file), sizeof(file));
-    outFile.write(reinterpret_cast<c
+    outFile.write(reinterpret_cast<char *>(info), sizeof(info));
+
+    unsigned char pad[3] = {0, 0, 0};
+
+    for (size_t
