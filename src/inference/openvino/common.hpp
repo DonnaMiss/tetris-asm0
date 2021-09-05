@@ -301,4 +301,6 @@ static UNUSED void writeOutputBmp(std::vector<std::vector<size_t>> data, size_t 
 
     unsigned char pad[3] = {0, 0, 0};
 
-    for (size_t
+    for (size_t y = 0; y < height; y++) {
+        for (size_t x = 0; x < width; x++) {
+    
