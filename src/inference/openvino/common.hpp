@@ -306,4 +306,6 @@ static UNUSED void writeOutputBmp(std::vector<std::vector<size_t>> data, size_t 
             unsigned char pixel[3];
             size_t index = data.at(y).at(x);
             pixel[0] = colors.at(index).red();
-            pixel[1] = colors.at(index).green()
+            pixel[1] = colors.at(index).green();
+            pixel[2] = colors.at(index).blue();
+            outFile.write(reinterpret_cast<ch
