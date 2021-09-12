@@ -303,4 +303,6 @@ static UNUSED void writeOutputBmp(std::vector<std::vector<size_t>> data, size_t 
 
     for (size_t y = 0; y < height; y++) {
         for (size_t x = 0; x < width; x++) {
-    
+            unsigned char pixel[3];
+            size_t index = data.at(y).at(x);
+          
