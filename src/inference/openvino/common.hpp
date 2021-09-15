@@ -310,4 +310,11 @@ static UNUSED void writeOutputBmp(std::vector<std::vector<size_t>> data, size_t 
             pixel[2] = colors.at(index).blue();
             outFile.write(reinterpret_cast<char *>(pixel), 3);
         }
-        outFile.write(reinterpret_cast<char *>(pad), pad
+        outFile.write(reinterpret_cast<char *>(pad), padSize);
+    }
+}
+
+/**
+* @brief Writes output data to BMP image
+* @param name - image name
+* @pa
