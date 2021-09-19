@@ -317,4 +317,6 @@ static UNUSED void writeOutputBmp(std::vector<std::vector<size_t>> data, size_t 
 /**
 * @brief Writes output data to BMP image
 * @param name - image name
-* @pa
+* @param data - output data
+* @param height - height of the target image
+* @param width - widt
