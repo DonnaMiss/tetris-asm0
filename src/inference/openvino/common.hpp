@@ -319,4 +319,7 @@ static UNUSED void writeOutputBmp(std::vector<std::vector<size_t>> data, size_t 
 * @param name - image name
 * @param data - output data
 * @param height - height of the target image
-* @param width - widt
+* @param width - width of the target image
+* @return false if error else true
+*/
+static UNUSED bool writeOutputBmp(s
