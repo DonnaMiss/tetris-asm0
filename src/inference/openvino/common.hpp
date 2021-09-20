@@ -322,4 +322,5 @@ static UNUSED void writeOutputBmp(std::vector<std::vector<size_t>> data, size_t 
 * @param width - width of the target image
 * @return false if error else true
 */
-static UNUSED bool writeOutputBmp(s
+static UNUSED bool writeOutputBmp(std::string name, unsigned char *data, size_t height, size_t width) {
+    std::ofstream outFil
