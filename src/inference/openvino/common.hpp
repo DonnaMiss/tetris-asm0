@@ -323,4 +323,7 @@ static UNUSED void writeOutputBmp(std::vector<std::vector<size_t>> data, size_t 
 * @return false if error else true
 */
 static UNUSED bool writeOutputBmp(std::string name, unsigned char *data, size_t height, size_t width) {
-    std::ofstream outFil
+    std::ofstream outFile;
+    outFile.open(name, std::ofstream::binary);
+    if (!outFile.is_open()) {
+      
