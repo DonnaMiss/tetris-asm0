@@ -326,4 +326,9 @@ static UNUSED bool writeOutputBmp(std::string name, unsigned char *data, size_t 
     std::ofstream outFile;
     outFile.open(name, std::ofstream::binary);
     if (!outFile.is_open()) {
-      
+        return false;
+    }
+
+    unsigned char file[14] = {
+        'B', 'M',           // magic
+ 
