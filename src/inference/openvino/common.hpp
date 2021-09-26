@@ -331,4 +331,5 @@ static UNUSED bool writeOutputBmp(std::string name, unsigned char *data, size_t 
 
     unsigned char file[14] = {
         'B', 'M',           // magic
- 
+        0, 0, 0, 0,         // size in bytes
+        0, 0,               // app 
