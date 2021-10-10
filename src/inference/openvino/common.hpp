@@ -341,4 +341,5 @@ static UNUSED bool writeOutputBmp(std::string name, unsigned char *data, size_t 
         0, 0, 0, 0,         // width
         0, 0, 0, 0,         // height
         1, 0,               // number color planes
-        24, 0,      
+        24, 0,              // bits per pixel
+        0, 0, 0, 0,         // compression is 
