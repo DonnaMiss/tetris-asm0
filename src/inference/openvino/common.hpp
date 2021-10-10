@@ -339,4 +339,6 @@ static UNUSED bool writeOutputBmp(std::string name, unsigned char *data, size_t 
     unsigned char info[40] = {
         40, 0, 0, 0,        // info hd size
         0, 0, 0, 0,         // width
-        0, 0, 0, 0,         
+        0, 0, 0, 0,         // height
+        1, 0,               // number color planes
+        24, 0,      
