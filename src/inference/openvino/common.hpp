@@ -350,4 +350,5 @@ static UNUSED bool writeOutputBmp(std::string name, unsigned char *data, size_t 
         0, 0, 0, 0,         // #important colors
     };
 
-    if (height > (size_t)std::numeric_limits<int32_t>::max || width > (size_t)s
+    if (height > (size_t)std::numeric_limits<int32_t>::max || width > (size_t)std::numeric_limits<int32_t>::max) {
+        THROW_IE_EXCEPTION << "File size is too big: " << hei
