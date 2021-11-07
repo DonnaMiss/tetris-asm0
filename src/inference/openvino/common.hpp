@@ -351,4 +351,7 @@ static UNUSED bool writeOutputBmp(std::string name, unsigned char *data, size_t 
     };
 
     if (height > (size_t)std::numeric_limits<int32_t>::max || width > (size_t)std::numeric_limits<int32_t>::max) {
-        THROW_IE_EXCEPTION << "File size is too big: " << hei
+        THROW_IE_EXCEPTION << "File size is too big: " << height << " X " << width;
+    }
+
+    int padSize = static_cast<int>(4 - (width * 3) % 4)
