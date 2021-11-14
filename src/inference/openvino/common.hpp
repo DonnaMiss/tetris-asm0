@@ -355,4 +355,7 @@ static UNUSED bool writeOutputBmp(std::string name, unsigned char *data, size_t 
     }
 
     int padSize = static_cast<int>(4 - (width * 3) % 4) % 4;
-    int sizeData = static_cast<int>(width * height * 3 + height * padSize)
+    int sizeData = static_cast<int>(width * height * 3 + height * padSize);
+    int sizeAll = sizeData + sizeof(file) + sizeof(info);
+
+    file[2] = (unsig
