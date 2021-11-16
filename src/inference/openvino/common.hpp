@@ -361,4 +361,7 @@ static UNUSED bool writeOutputBmp(std::string name, unsigned char *data, size_t 
     file[2] = (unsigned char)(sizeAll);
     file[3] = (unsigned char)(sizeAll >> 8);
     file[4] = (unsigned char)(sizeAll >> 16);
-    file[5] = (unsigned char)(sizeAll >
+    file[5] = (unsigned char)(sizeAll >> 24);
+
+    info[4] = (unsigned char)(width);
+    info[5] = (unsigned char)(width >> 8)
