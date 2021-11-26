@@ -372,4 +372,7 @@ static UNUSED bool writeOutputBmp(std::string name, unsigned char *data, size_t 
     info[8] = (unsigned char)(negativeHeight);
     info[9] = (unsigned char)(negativeHeight >> 8);
     info[10] = (unsigned char)(negativeHeight >> 16);
-    info[11] = (unsigned char)
+    info[11] = (unsigned char)(negativeHeight >> 24);
+
+    info[20] = (unsigned char)(sizeData);
+    in
