@@ -379,4 +379,5 @@ static UNUSED bool writeOutputBmp(std::string name, unsigned char *data, size_t 
     info[22] = (unsigned char)(sizeData >> 16);
     info[23] = (unsigned char)(sizeData >> 24);
 
-    outFile.write(reinterpre
+    outFile.write(reinterpret_cast<char *>(file), sizeof(file));
+    outFile.write(reinterpret_cast<char *>(info)
