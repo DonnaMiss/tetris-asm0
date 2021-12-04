@@ -386,4 +386,6 @@ static UNUSED bool writeOutputBmp(std::string name, unsigned char *data, size_t 
 
     for (size_t y = 0; y < height; y++) {
         for (size_t x = 0; x < width; x++) {
-         
+            unsigned char pixel[3];
+            pixel[0] = data[y * width * 3 + x * 3];
+  
