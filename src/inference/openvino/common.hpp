@@ -389,4 +389,6 @@ static UNUSED bool writeOutputBmp(std::string name, unsigned char *data, size_t 
             unsigned char pixel[3];
             pixel[0] = data[y * width * 3 + x * 3];
             pixel[1] = data[y * width * 3 + x * 3 + 1];
-            pixel[2] = data[y *
+            pixel[2] = data[y * width * 3 + x * 3 + 2];
+
+            outFile.write(reinterpret_cast<char *>(pixel)
