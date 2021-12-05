@@ -393,4 +393,11 @@ static UNUSED bool writeOutputBmp(std::string name, unsigned char *data, size_t 
 
             outFile.write(reinterpret_cast<char *>(pixel), 3);
         }
-        outFile.write(reinterpret_cast<char *>(pad),
+        outFile.write(reinterpret_cast<char *>(pad), padSize);
+    }
+    return true;
+}
+
+
+/**
+* @brief Adds colored rectangles to th
