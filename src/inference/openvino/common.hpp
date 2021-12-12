@@ -400,4 +400,6 @@ static UNUSED bool writeOutputBmp(std::string name, unsigned char *data, size_t 
 
 
 /**
-* @brief Adds colored rectangles to th
+* @brief Adds colored rectangles to the image
+* @param data - data where rectangles are put
+* @param height - height of the re
