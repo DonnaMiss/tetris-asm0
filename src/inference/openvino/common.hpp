@@ -404,4 +404,5 @@ static UNUSED bool writeOutputBmp(std::string name, unsigned char *data, size_t 
 * @param data - data where rectangles are put
 * @param height - height of the rectangle
 * @param width - width of the rectangle
-* @param rectangles - vector points f
+* @param rectangles - vector points for the rectangle, should be 4x compared to num classes
+* @param classes - vector of
