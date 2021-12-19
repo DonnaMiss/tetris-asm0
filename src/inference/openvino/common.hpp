@@ -405,4 +405,7 @@ static UNUSED bool writeOutputBmp(std::string name, unsigned char *data, size_t 
 * @param height - height of the rectangle
 * @param width - width of the rectangle
 * @param rectangles - vector points for the rectangle, should be 4x compared to num classes
-* @param classes - vector of
+* @param classes - vector of classes
+* @param thickness - thickness of a line (in pixels) to be used for bounding boxes
+*/
+static UNUS
