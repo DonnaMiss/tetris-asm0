@@ -408,4 +408,4 @@ static UNUSED bool writeOutputBmp(std::string name, unsigned char *data, size_t 
 * @param classes - vector of classes
 * @param thickness - thickness of a line (in pixels) to be used for bounding boxes
 */
-static UNUS
+static UNUSED void addRectangles(unsigned char *data, size_t height, size_t width, std::vector<int
