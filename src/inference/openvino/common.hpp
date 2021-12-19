@@ -409,4 +409,6 @@ static UNUSED bool writeOutputBmp(std::string name, unsigned char *data, size_t 
 * @param thickness - thickness of a line (in pixels) to be used for bounding boxes
 */
 static UNUSED void addRectangles(unsigned char *data, size_t height, size_t width, std::vector<int> rectangles, std::vector<int> classes, int thickness = 1) {
-    std::vector<Color> colors
+    std::vector<Color> colors = {  // colors to be used for bounding boxes
+        { 128, 64,  128 },
+        
