@@ -411,4 +411,8 @@ static UNUSED bool writeOutputBmp(std::string name, unsigned char *data, size_t 
 static UNUSED void addRectangles(unsigned char *data, size_t height, size_t width, std::vector<int> rectangles, std::vector<int> classes, int thickness = 1) {
     std::vector<Color> colors = {  // colors to be used for bounding boxes
         { 128, 64,  128 },
-        
+        { 232, 35,  244 },
+        { 70,  70,  70 },
+        { 156, 102, 102 },
+        { 153, 153, 190 },
+        {
