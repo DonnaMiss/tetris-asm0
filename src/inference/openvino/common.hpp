@@ -425,4 +425,8 @@ static UNUSED void addRectangles(unsigned char *data, size_t height, size_t widt
         { 0,   0,   255 },
         { 142, 0,   0 },
         { 70,  0,   0 },
-        { 100,
+        { 100, 60,  0 },
+        { 90,  0,   0 },
+        { 230, 0,   0 },
+        { 32,  11,  119 },
+     
