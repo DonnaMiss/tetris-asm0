@@ -429,4 +429,7 @@ static UNUSED void addRectangles(unsigned char *data, size_t height, size_t widt
         { 90,  0,   0 },
         { 230, 0,   0 },
         { 32,  11,  119 },
-     
+        { 0,   74,  111 },
+        { 81,  0,   81 }
+    };
+    if (rectangles.size() % 4 !=
