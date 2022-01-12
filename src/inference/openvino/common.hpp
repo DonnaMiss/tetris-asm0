@@ -432,4 +432,8 @@ static UNUSED void addRectangles(unsigned char *data, size_t height, size_t widt
         { 0,   74,  111 },
         { 81,  0,   81 }
     };
-    if (rectangles.size() % 4 !=
+    if (rectangles.size() % 4 != 0 || rectangles.size() / 4 != classes.size()) {
+        return;
+    }
+
+    for (si
