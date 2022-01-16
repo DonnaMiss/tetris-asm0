@@ -442,4 +442,7 @@ static UNUSED void addRectangles(unsigned char *data, size_t height, size_t widt
         int w = rectangles.at(i * 4 + 2);
         int h = rectangles.at(i * 4 + 3);
 
-        int cls = classes.at(i) % co
+        int cls = classes.at(i) % colors.size();  // color of a bounding box line
+
+        if (x < 0) x = 0;
+        i
