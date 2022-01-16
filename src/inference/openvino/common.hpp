@@ -436,4 +436,5 @@ static UNUSED void addRectangles(unsigned char *data, size_t height, size_t widt
         return;
     }
 
-    for (si
+    for (size_t i = 0; i < classes.size(); i++) {
+        int x = rectangles
