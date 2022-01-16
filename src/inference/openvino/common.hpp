@@ -439,4 +439,7 @@ static UNUSED void addRectangles(unsigned char *data, size_t height, size_t widt
     for (size_t i = 0; i < classes.size(); i++) {
         int x = rectangles.at(i * 4);
         int y = rectangles.at(i * 4 + 1);
-        int w = rectangles.at(i * 4
+        int w = rectangles.at(i * 4 + 2);
+        int h = rectangles.at(i * 4 + 3);
+
+        int cls = classes.at(i) % co
