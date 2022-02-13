@@ -450,4 +450,6 @@ static UNUSED void addRectangles(unsigned char *data, size_t height, size_t widt
         if (h < 0) h = 0;
 
         if (static_cast<std::size_t>(x) >= width) { x = width - 1; w = 0; thickness = 1; }
-        if (static_cast<std::size_t>(y) >= height) { y = height - 1; h = 0; thickn
+        if (static_cast<std::size_t>(y) >= height) { y = height - 1; h = 0; thickness = 1; }
+
+        if (static_cast<std::size_t>(x + w) >= width) { w = width - x - 1; }
