@@ -454,3 +454,7 @@ static UNUSED void addRectangles(unsigned char *data, size_t height, size_t widt
 
         if (static_cast<std::size_t>(x + w) >= width) { w = width - x - 1; }
         if (static_cast<std::size_t>(y + h) >= height) { h = height - y - 1; }
+
+        thickness = std::min(std::min(thickness, w / 2 + 1), h / 2 + 1);
+
+     
