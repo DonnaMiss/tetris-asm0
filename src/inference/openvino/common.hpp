@@ -457,4 +457,6 @@ static UNUSED void addRectangles(unsigned char *data, size_t height, size_t widt
 
         thickness = std::min(std::min(thickness, w / 2 + 1), h / 2 + 1);
 
-     
+        size_t shift_first;
+        size_t shift_second;
+        for (int t = 0; 
