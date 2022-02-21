@@ -459,4 +459,6 @@ static UNUSED void addRectangles(unsigned char *data, size_t height, size_t widt
 
         size_t shift_first;
         size_t shift_second;
-        for (int t = 0; 
+        for (int t = 0; t < thickness; t++) {
+            shift_first = (y + t) * width * 3;
+           
