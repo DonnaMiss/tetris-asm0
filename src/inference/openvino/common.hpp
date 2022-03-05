@@ -475,4 +475,6 @@ static UNUSED void addRectangles(unsigned char *data, size_t height, size_t widt
         for (int t = 0; t < thickness; t++) {
             shift_first = (x + t) * 3;
             shift_second = (x + w - t) * 3;
-            for (int ii = y; ii < y + h + 1; 
+            for (int ii = y; ii < y + h + 1; ii++) {
+                data[shift_first + ii * width * 3] = colors.at(cls).red();
+       
