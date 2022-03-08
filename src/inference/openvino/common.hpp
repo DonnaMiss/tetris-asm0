@@ -484,3 +484,12 @@ static UNUSED void addRectangles(unsigned char *data, size_t height, size_t widt
                 data[shift_second + ii * width * 3 + 2] = colors.at(cls).blue();
             }
         }
+    }
+}
+
+
+
+/**
+ * Write output data to image
+ * \param name - image name
+ * \para
