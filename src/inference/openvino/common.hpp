@@ -492,4 +492,6 @@ static UNUSED void addRectangles(unsigned char *data, size_t height, size_t widt
 /**
  * Write output data to image
  * \param name - image name
- * \para
+ * \param data - output data
+ * \param classesNum - the number of classes
+ * \return fa
