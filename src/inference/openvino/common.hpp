@@ -494,4 +494,7 @@ static UNUSED void addRectangles(unsigned char *data, size_t height, size_t widt
  * \param name - image name
  * \param data - output data
  * \param classesNum - the number of classes
- * \return fa
+ * \return false if error else true
+ */
+
+static UNUSED bool writeOutputBmp(unsigned char
