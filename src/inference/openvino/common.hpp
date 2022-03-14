@@ -497,4 +497,5 @@ static UNUSED void addRectangles(unsigned char *data, size_t height, size_t widt
  * \return false if error else true
  */
 
-static UNUSED bool writeOutputBmp(unsigned char
+static UNUSED bool writeOutputBmp(unsigned char *data, size_t height, size_t width, std::ostream &outFile) {
+    unsigned
