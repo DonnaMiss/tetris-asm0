@@ -501,4 +501,6 @@ static UNUSED bool writeOutputBmp(unsigned char *data, size_t height, size_t wid
     unsigned char file[14] = {
             'B', 'M',           // magic
             0, 0, 0, 0,         // size in bytes
-            0, 0,               // app da
+            0, 0,               // app data
+            0, 0,               // app data
+            40+14, 0, 0
