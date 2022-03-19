@@ -500,4 +500,5 @@ static UNUSED void addRectangles(unsigned char *data, size_t height, size_t widt
 static UNUSED bool writeOutputBmp(unsigned char *data, size_t height, size_t width, std::ostream &outFile) {
     unsigned char file[14] = {
             'B', 'M',           // magic
-            0, 0, 
+            0, 0, 0, 0,         // size in bytes
+            0, 0,               // app da
