@@ -503,4 +503,7 @@ static UNUSED bool writeOutputBmp(unsigned char *data, size_t height, size_t wid
             0, 0, 0, 0,         // size in bytes
             0, 0,               // app data
             0, 0,               // app data
-            40+14, 0, 0
+            40+14, 0, 0, 0      // start of data offset
+    };
+    unsigned char info[40] = {
+     
