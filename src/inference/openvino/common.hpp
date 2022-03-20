@@ -513,4 +513,5 @@ static UNUSED bool writeOutputBmp(unsigned char *data, size_t height, size_t wid
             24, 0,              // bits per pixel
             0, 0, 0, 0,         // compression is none
             0, 0, 0, 0,         // image bits size
-            0x
+            0x13, 0x0B, 0, 0,   // horz resolution in pixel / m
+            0x13, 0x0B,
