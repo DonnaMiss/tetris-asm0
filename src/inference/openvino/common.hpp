@@ -511,4 +511,6 @@ static UNUSED bool writeOutputBmp(unsigned char *data, size_t height, size_t wid
             0, 0, 0, 0,         // height
             1, 0,               // number color planes
             24, 0,              // bits per pixel
-            0, 0, 0, 0,         // compr
+            0, 0, 0, 0,         // compression is none
+            0, 0, 0, 0,         // image bits size
+            0x
