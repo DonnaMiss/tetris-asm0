@@ -508,4 +508,5 @@ static UNUSED bool writeOutputBmp(unsigned char *data, size_t height, size_t wid
     unsigned char info[40] = {
             40, 0, 0, 0,        // info hd size
             0, 0, 0, 0,         // width
-           
+            0, 0, 0, 0,         // height
+            1, 0,               // number color planes
