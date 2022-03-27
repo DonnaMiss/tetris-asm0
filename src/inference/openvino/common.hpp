@@ -519,4 +519,5 @@ static UNUSED bool writeOutputBmp(unsigned char *data, size_t height, size_t wid
             0, 0, 0, 0,         // #important colors
     };
 
-    if (height > (size_t)std::numeric_limits<int32_t>::max || 
+    if (height > (size_t)std::numeric_limits<int32_t>::max || width > (size_t)std::numeric_limits<int32_t>::max) {
+        THROW_IE_EXCEPTION
