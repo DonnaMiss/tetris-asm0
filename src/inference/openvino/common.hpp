@@ -523,4 +523,5 @@ static UNUSED bool writeOutputBmp(unsigned char *data, size_t height, size_t wid
         THROW_IE_EXCEPTION << "File size is too big: " << height << " X " << width;
     }
 
-    int padSize  = static_cas
+    int padSize  = static_cast<int>(4 - (width * 3) % 4) % 4;
+    int sizeData = static_cast<int>(width * height 
