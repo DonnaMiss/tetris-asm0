@@ -533,4 +533,5 @@ static UNUSED bool writeOutputBmp(unsigned char *data, size_t height, size_t wid
     file[ 5] = (unsigned char)(sizeAll >> 24);
 
     info[ 4] = (unsigned char)(width      );
-  
+    info[ 5] = (unsigned char)(width >>  8);
+    info[ 6] = (unsigned char)(widt
