@@ -546,4 +546,6 @@ static UNUSED bool writeOutputBmp(unsigned char *data, size_t height, size_t wid
     info[20] = (unsigned char)(sizeData      );
     info[21] = (unsigned char)(sizeData >>  8);
     info[22] = (unsigned char)(sizeData >> 16);
- 
+    info[23] = (unsigned char)(sizeData >> 24);
+
+    outFile.writ
