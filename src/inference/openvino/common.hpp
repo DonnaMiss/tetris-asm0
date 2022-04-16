@@ -548,4 +548,5 @@ static UNUSED bool writeOutputBmp(unsigned char *data, size_t height, size_t wid
     info[22] = (unsigned char)(sizeData >> 16);
     info[23] = (unsigned char)(sizeData >> 24);
 
-    outFile.writ
+    outFile.write(reinterpret_cast<char*>(file), sizeof(file));
+    outFile.write(rein
