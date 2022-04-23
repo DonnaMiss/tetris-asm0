@@ -552,3 +552,6 @@ static UNUSED bool writeOutputBmp(unsigned char *data, size_t height, size_t wid
     outFile.write(reinterpret_cast<char*>(info), sizeof(info));
 
     unsigned char pad[3] = {0, 0, 0};
+
+    for (size_t y = 0; y < height; y++) {
+        for (size_t x = 0; x < width; x++
