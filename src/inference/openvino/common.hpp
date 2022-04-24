@@ -554,4 +554,7 @@ static UNUSED bool writeOutputBmp(unsigned char *data, size_t height, size_t wid
     unsigned char pad[3] = {0, 0, 0};
 
     for (size_t y = 0; y < height; y++) {
-        for (size_t x = 0; x < width; x++
+        for (size_t x = 0; x < width; x++) {
+            unsigned char pixel[3];
+            pixel[0] = data[y*width*3 + x*3];
+      
