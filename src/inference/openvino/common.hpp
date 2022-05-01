@@ -561,4 +561,10 @@ static UNUSED bool writeOutputBmp(unsigned char *data, size_t height, size_t wid
             pixel[2] = data[y*width*3 + x*3 + 2];
             outFile.write(reinterpret_cast<char *>(pixel), 3);
         }
-        outFile.write(reinterpret_cast<char *>(pad), pad
+        outFile.write(reinterpret_cast<char *>(pad), padSize);
+    }
+
+    return true;
+}
+
+static std::vector<std::pair<std::string, InferenceEngin
