@@ -569,4 +569,6 @@ static UNUSED bool writeOutputBmp(unsigned char *data, size_t height, size_t wid
 
 static std::vector<std::pair<std::string, InferenceEngine::InferenceEngineProfileInfo>>
 perfCountersSorted(std::map<std::string, InferenceEngine::InferenceEngineProfileInfo> perfMap) {
-    using perfItem = std::pair<std::string,
+    using perfItem = std::pair<std::string, InferenceEngine::InferenceEngineProfileInfo>;
+    std::vector<perfItem> sorted;
+    for (auto &
