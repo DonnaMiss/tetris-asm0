@@ -567,4 +567,5 @@ static UNUSED bool writeOutputBmp(unsigned char *data, size_t height, size_t wid
     return true;
 }
 
-static std::vector<std::pair<std::string, InferenceEngin
+static std::vector<std::pair<std::string, InferenceEngine::InferenceEngineProfileInfo>>
+perfCountersSorted(std::map<std::string, InferenceEng
