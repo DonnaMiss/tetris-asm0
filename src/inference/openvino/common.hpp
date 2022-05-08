@@ -571,4 +571,6 @@ static std::vector<std::pair<std::string, InferenceEngine::InferenceEngineProfil
 perfCountersSorted(std::map<std::string, InferenceEngine::InferenceEngineProfileInfo> perfMap) {
     using perfItem = std::pair<std::string, InferenceEngine::InferenceEngineProfileInfo>;
     std::vector<perfItem> sorted;
-    for (auto &
+    for (auto &kvp : perfMap) sorted.push_back(kvp);
+
+    std::stable_sort(sorted.begin(), sorted.end()
