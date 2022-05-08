@@ -573,4 +573,6 @@ perfCountersSorted(std::map<std::string, InferenceEngine::InferenceEngineProfile
     std::vector<perfItem> sorted;
     for (auto &kvp : perfMap) sorted.push_back(kvp);
 
-    std::stable_sort(sorted.begin(), sorted.end()
+    std::stable_sort(sorted.begin(), sorted.end(),
+                     [](const perfItem& l, const perfItem& r) {
+                      
