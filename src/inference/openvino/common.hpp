@@ -575,4 +575,7 @@ perfCountersSorted(std::map<std::string, InferenceEngine::InferenceEngineProfile
 
     std::stable_sort(sorted.begin(), sorted.end(),
                      [](const perfItem& l, const perfItem& r) {
-                      
+                         return l.second.execution_index < r.second.execution_index;
+                     });
+
+    re
