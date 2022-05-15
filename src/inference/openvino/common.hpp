@@ -581,4 +581,5 @@ perfCountersSorted(std::map<std::string, InferenceEngine::InferenceEngineProfile
     return sorted;
 }
 
-static UNUSED void printPerformanceCounts(con
+static UNUSED void printPerformanceCounts(const std::map<std::string, InferenceEngine::InferenceEngineProfileInfo>& performanceMap,
+ 
