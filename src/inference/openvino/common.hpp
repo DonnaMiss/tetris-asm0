@@ -578,4 +578,7 @@ perfCountersSorted(std::map<std::string, InferenceEngine::InferenceEngineProfile
                          return l.second.execution_index < r.second.execution_index;
                      });
 
-    re
+    return sorted;
+}
+
+static UNUSED void printPerformanceCounts(con
