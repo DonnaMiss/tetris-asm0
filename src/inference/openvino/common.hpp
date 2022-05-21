@@ -584,4 +584,7 @@ perfCountersSorted(std::map<std::string, InferenceEngine::InferenceEngineProfile
 static UNUSED void printPerformanceCounts(const std::map<std::string, InferenceEngine::InferenceEngineProfileInfo>& performanceMap,
                                           std::ostream &stream, std::string deviceName,
                                           bool bshowHeader = true) {
-    l
+    long long totalTime = 0;
+    // Print performance counts
+    if (bshowHeader) {
+    
