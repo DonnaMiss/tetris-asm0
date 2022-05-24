@@ -587,4 +587,5 @@ static UNUSED void printPerformanceCounts(const std::map<std::string, InferenceE
     long long totalTime = 0;
     // Print performance counts
     if (bshowHeader) {
-    
+        stream << std::endl << "performance counts:" << std::endl << std::endl;
+   
