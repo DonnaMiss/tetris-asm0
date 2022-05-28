@@ -588,4 +588,8 @@ static UNUSED void printPerformanceCounts(const std::map<std::string, InferenceE
     // Print performance counts
     if (bshowHeader) {
         stream << std::endl << "performance counts:" << std::endl << std::endl;
-   
+    }
+
+    auto performanceMapSorted = perfCountersSorted(performanceMap);
+
+  
