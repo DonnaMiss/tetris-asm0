@@ -592,4 +592,5 @@ static UNUSED void printPerformanceCounts(const std::map<std::string, InferenceE
 
     auto performanceMapSorted = perfCountersSorted(performanceMap);
 
-  
+    for (const auto & it : performanceMapSorted) {
+        std::string toPrint(
