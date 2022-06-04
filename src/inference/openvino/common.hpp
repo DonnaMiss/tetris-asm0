@@ -596,4 +596,6 @@ static UNUSED void printPerformanceCounts(const std::map<std::string, InferenceE
         std::string toPrint(it.first);
         const int maxLayerName = 30;
 
-        if (it.first.length() >= 
+        if (it.first.length() >= maxLayerName) {
+            toPrint  = it.first.substr(0, maxLayerName - 4);
+ 
