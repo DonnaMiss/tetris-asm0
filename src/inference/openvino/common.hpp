@@ -604,4 +604,5 @@ static UNUSED void printPerformanceCounts(const std::map<std::string, InferenceE
 
         stream << std::setw(maxLayerName) << std::left << toPrint;
         switch (it.second.status) {
-        case InferenceEngine::In
+        case InferenceEngine::InferenceEngineProfileInfo::EXECUTED:
+            stream << std::setw(15) << std::left << "EXEC
