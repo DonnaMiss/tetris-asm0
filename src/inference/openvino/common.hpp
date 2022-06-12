@@ -610,4 +610,5 @@ static UNUSED void printPerformanceCounts(const std::map<std::string, InferenceE
         case InferenceEngine::InferenceEngineProfileInfo::NOT_RUN:
             stream << std::setw(15) << std::left << "NOT_RUN";
             break;
-    
+        case InferenceEngine::InferenceEngineProfileInfo::OPTIMIZED_OUT:
+            stream <<
