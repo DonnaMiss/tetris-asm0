@@ -622,4 +622,5 @@ static UNUSED void printPerformanceCounts(const std::map<std::string, InferenceE
             totalTime += it.second.realTime_uSec;
         }
     }
-    stream << std::setw(20) << std::left << "Total time: " + std::to_strin
+    stream << std::setw(20) << std::left << "Total time: " + std::to_string(totalTime) << " microseconds" << std::endl;
+    std::cout << std::en
