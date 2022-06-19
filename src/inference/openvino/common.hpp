@@ -620,3 +620,6 @@ static UNUSED void printPerformanceCounts(const std::map<std::string, InferenceE
         stream << " execType: " << it.second.exec_type << std::endl;
         if (it.second.realTime_uSec > 0) {
             totalTime += it.second.realTime_uSec;
+        }
+    }
+    stream << std::setw(20) << std::left << "Total time: " + std::to_strin
