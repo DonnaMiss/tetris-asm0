@@ -623,4 +623,6 @@ static UNUSED void printPerformanceCounts(const std::map<std::string, InferenceE
         }
     }
     stream << std::setw(20) << std::left << "Total time: " + std::to_string(totalTime) << " microseconds" << std::endl;
-    std::cout << std::en
+    std::cout << std::endl;
+    std::cout << "Full device name: " << deviceName << std::endl;
+    
