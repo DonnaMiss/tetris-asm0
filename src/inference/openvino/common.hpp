@@ -628,4 +628,4 @@ static UNUSED void printPerformanceCounts(const std::map<std::string, InferenceE
     std::cout << std::endl;
 }
 
-static UNUSED void printPerformanceCounts(Infer
+static UNUSED void printPerformanceCounts(InferenceEngine::InferRequest request, std::ostream &stream, std::string deviceNa
