@@ -633,4 +633,4 @@ static UNUSED void printPerformanceCounts(InferenceEngine::InferRequest request,
     printPerformanceCounts(performanceMap, stream, deviceName, bshowHeader);
 }
 
-inline std:
+inline std::map<std::string, std::string> getMapFullDevicesNames(InferenceEngine::Core& ie, std::vect
