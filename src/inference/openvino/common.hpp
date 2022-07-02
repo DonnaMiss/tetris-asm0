@@ -628,4 +628,6 @@ static UNUSED void printPerformanceCounts(const std::map<std::string, InferenceE
     std::cout << std::endl;
 }
 
-static UNUSED void printPerformanceCounts(InferenceEngine::InferRequest request, std::ostream &stream, std::string deviceNa
+static UNUSED void printPerformanceCounts(InferenceEngine::InferRequest request, std::ostream &stream, std::string deviceName, bool bshowHeader = true) {
+    auto performanceMap = request.GetPerformanceCounts();
+    pr
