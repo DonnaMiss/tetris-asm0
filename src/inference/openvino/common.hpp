@@ -639,4 +639,5 @@ inline std::map<std::string, std::string> getMapFullDevicesNames(InferenceEngine
     for (std::string& deviceName : devices) {
         if (deviceName != "") {
             try {
-                p = ie.GetMetric(deviceName, 
+                p = ie.GetMetric(deviceName, METRIC_KEY(FULL_DEVICE_NAME));
+                devicesMap.insert(std
