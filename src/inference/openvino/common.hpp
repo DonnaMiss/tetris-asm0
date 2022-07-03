@@ -637,4 +637,6 @@ inline std::map<std::string, std::string> getMapFullDevicesNames(InferenceEngine
     std::map<std::string, std::string> devicesMap;
     InferenceEngine::Parameter p;
     for (std::string& deviceName : devices) {
-        if (dev
+        if (deviceName != "") {
+            try {
+                p = ie.GetMetric(deviceName, 
