@@ -644,4 +644,9 @@ inline std::map<std::string, std::string> getMapFullDevicesNames(InferenceEngine
             }
             catch (InferenceEngine::details::InferenceEngineException &) {
             }
-    
+        }
+    }
+    return devicesMap;
+}
+
+inline std::string getF
