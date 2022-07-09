@@ -649,4 +649,5 @@ inline std::map<std::string, std::string> getMapFullDevicesNames(InferenceEngine
     return devicesMap;
 }
 
-inline std::string getF
+inline std::string getFullDeviceName(std::map<std::string, std::string>& devicesMap, std::string device) {
+    
