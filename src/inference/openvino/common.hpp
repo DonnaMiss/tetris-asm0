@@ -651,4 +651,7 @@ inline std::map<std::string, std::string> getMapFullDevicesNames(InferenceEngine
 
 inline std::string getFullDeviceName(std::map<std::string, std::string>& devicesMap, std::string device) {
     std::map<std::string, std::string>::iterator it = devicesMap.find(device);
-   
+    if (it != devicesMap.end()) {
+        return it->second;
+    } else {
+        return 
