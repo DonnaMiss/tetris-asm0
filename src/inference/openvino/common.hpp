@@ -658,4 +658,7 @@ inline std::string getFullDeviceName(std::map<std::string, std::string>& devices
     }
 }
 
-inline std::string getFullDeviceName(InferenceEngine::Core& ie, 
+inline std::string getFullDeviceName(InferenceEngine::Core& ie, std::string device) {
+    InferenceEngine::Parameter p;
+    try {
+        p = ie.GetMetri
