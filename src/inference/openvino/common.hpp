@@ -654,4 +654,8 @@ inline std::string getFullDeviceName(std::map<std::string, std::string>& devices
     if (it != devicesMap.end()) {
         return it->second;
     } else {
-        return 
+        return "";
+    }
+}
+
+inline std::string getFullDeviceName(InferenceEngine::Core& ie, 
