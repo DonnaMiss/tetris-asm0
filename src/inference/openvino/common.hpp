@@ -664,4 +664,6 @@ inline std::string getFullDeviceName(InferenceEngine::Core& ie, std::string devi
         p = ie.GetMetric(device, METRIC_KEY(FULL_DEVICE_NAME));
         return  p.as<std::string>();
     }
-    ca
+    catch (InferenceEngine::details::InferenceEngineException &) {
+        return "";
+    }
