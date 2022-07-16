@@ -667,3 +667,7 @@ inline std::string getFullDeviceName(InferenceEngine::Core& ie, std::string devi
     catch (InferenceEngine::details::InferenceEngineException &) {
         return "";
     }
+}
+
+/**
+ * @brief This class represents an object that is found by an object detecti
