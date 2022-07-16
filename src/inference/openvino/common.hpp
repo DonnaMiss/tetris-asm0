@@ -670,4 +670,9 @@ inline std::string getFullDeviceName(InferenceEngine::Core& ie, std::string devi
 }
 
 /**
- * @brief This class represents an object that is found by an object detecti
+ * @brief This class represents an object that is found by an object detection net
+ */
+class DetectedObject {
+public:
+    int objectType;
+    float xmin, xmax, ymin, 
