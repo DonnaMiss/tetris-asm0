@@ -675,4 +675,7 @@ inline std::string getFullDeviceName(InferenceEngine::Core& ie, std::string devi
 class DetectedObject {
 public:
     int objectType;
-    float xmin, xmax, ymin, 
+    float xmin, xmax, ymin, ymax, prob;
+    bool difficult;
+
+    DetectedObject(int 
