@@ -678,4 +678,4 @@ public:
     float xmin, xmax, ymin, ymax, prob;
     bool difficult;
 
-    DetectedObject(int 
+    DetectedObject(int _objectType, float _xmin, float _ymin, float _xmax, float _ymax, float _prob, bool _difficul
