@@ -679,4 +679,7 @@ public:
     bool difficult;
 
     DetectedObject(int _objectType, float _xmin, float _ymin, float _xmax, float _ymax, float _prob, bool _difficult = false)
-        : objectType(_objectType), xmin(_xmin), xmax(_xmax
+        : objectType(_objectType), xmin(_xmin), xmax(_xmax), ymin(_ymin), ymax(_ymax), prob(_prob), difficult(_difficult) {
+    }
+
+    DetectedObjec
