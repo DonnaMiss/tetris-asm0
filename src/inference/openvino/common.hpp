@@ -682,4 +682,6 @@ public:
         : objectType(_objectType), xmin(_xmin), xmax(_xmax), ymin(_ymin), ymax(_ymax), prob(_prob), difficult(_difficult) {
     }
 
-    DetectedObjec
+    DetectedObject(const DetectedObject& other) = default;
+
+    static float ioU(const DetectedO
