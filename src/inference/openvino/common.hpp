@@ -688,4 +688,5 @@ public:
         // Add small space to eliminate empty squares
         float epsilon = 0;  // 1e-5f;
 
-      
+        DetectedObject detectedObject1(detectedObject1_.objectType,
+                (detectedObject1_.xmin - e
