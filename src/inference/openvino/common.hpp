@@ -685,4 +685,7 @@ public:
     DetectedObject(const DetectedObject& other) = default;
 
     static float ioU(const DetectedObject& detectedObject1_, const DetectedObject& detectedObject2_) {
-        // Add smal
+        // Add small space to eliminate empty squares
+        float epsilon = 0;  // 1e-5f;
+
+      
