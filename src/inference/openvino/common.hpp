@@ -684,4 +684,5 @@ public:
 
     DetectedObject(const DetectedObject& other) = default;
 
-    static float ioU(const DetectedO
+    static float ioU(const DetectedObject& detectedObject1_, const DetectedObject& detectedObject2_) {
+        // Add smal
