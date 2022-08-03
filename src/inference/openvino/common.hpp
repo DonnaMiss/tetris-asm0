@@ -691,4 +691,5 @@ public:
         DetectedObject detectedObject1(detectedObject1_.objectType,
                 (detectedObject1_.xmin - epsilon),
                 (detectedObject1_.ymin - epsilon),
-     
+                (detectedObject1_.xmax- epsilon),
+                (d
