@@ -689,4 +689,6 @@ public:
         float epsilon = 0;  // 1e-5f;
 
         DetectedObject detectedObject1(detectedObject1_.objectType,
-                (detectedObject1_.xmin - e
+                (detectedObject1_.xmin - epsilon),
+                (detectedObject1_.ymin - epsilon),
+     
