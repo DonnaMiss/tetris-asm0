@@ -696,4 +696,6 @@ public:
         DetectedObject detectedObject2(detectedObject2_.objectType,
                 (detectedObject2_.xmin + epsilon),
                 (detectedObject2_.ymin + epsilon),
-                (de
+                (detectedObject2_.xmax),
+                (detectedObject2_.ymax), detectedObject2_.prob);
+
