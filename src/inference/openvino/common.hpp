@@ -699,3 +699,5 @@ public:
                 (detectedObject2_.xmax),
                 (detectedObject2_.ymax), detectedObject2_.prob);
 
+        if (detectedObject1.objectType != detectedObject2.objectType) {
+            // objects ar
