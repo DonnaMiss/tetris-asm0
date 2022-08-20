@@ -706,4 +706,5 @@ public:
 
         if (detectedObject1.xmax < detectedObject1.xmin) return 0.0;
         if (detectedObject1.ymax < detectedObject1.ymin) return 0.0;
-        if (detectedObject2.xmax < de
+        if (detectedObject2.xmax < detectedObject2.xmin) return 0.0;
+        if (detectedObject2.ymax < detectedObject2.ymin) ret
