@@ -700,4 +700,8 @@ public:
                 (detectedObject2_.ymax), detectedObject2_.prob);
 
         if (detectedObject1.objectType != detectedObject2.objectType) {
-            // objects ar
+            // objects are different, so the result is 0
+            return 0.0f;
+        }
+
+        if (de
