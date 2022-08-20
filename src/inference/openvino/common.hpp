@@ -707,4 +707,7 @@ public:
         if (detectedObject1.xmax < detectedObject1.xmin) return 0.0;
         if (detectedObject1.ymax < detectedObject1.ymin) return 0.0;
         if (detectedObject2.xmax < detectedObject2.xmin) return 0.0;
-        if (detectedObject2.ymax < detectedObject2.ymin) ret
+        if (detectedObject2.ymax < detectedObject2.ymin) return 0.0;
+
+
+        float xmin = (std::max)(detectedObject1.xmin, detectedObject2.xmin);
