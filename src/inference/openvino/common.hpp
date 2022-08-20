@@ -704,4 +704,5 @@ public:
             return 0.0f;
         }
 
-        if (de
+        if (detectedObject1.xmax < detectedObject1.xmin) return 0.0;
+        if (detectedObject1.
