@@ -711,3 +711,5 @@ public:
 
 
         float xmin = (std::max)(detectedObject1.xmin, detectedObject2.xmin);
+        float ymin = (std::max)(detectedObject1.ymin, detectedObject2.ymin);
+        fl
