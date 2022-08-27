@@ -715,4 +715,5 @@ public:
         float xmax = (std::min)(detectedObject1.xmax, detectedObject2.xmax);
         float ymax = (std::min)(detectedObject1.ymax, detectedObject2.ymax);
 
-        //
+        // Caffe adds 1 to every length if the box isn't normalized. So do we...
+       
