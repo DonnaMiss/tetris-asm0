@@ -716,4 +716,7 @@ public:
         float ymax = (std::min)(detectedObject1.ymax, detectedObject2.ymax);
 
         // Caffe adds 1 to every length if the box isn't normalized. So do we...
-       
+        float addendum;
+        if (xmax > 1 || ymax > 1)
+            addendum = 1;
+    
