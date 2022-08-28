@@ -724,4 +724,5 @@ public:
 
         // intersection
         float intr;
-    
+        if ((xmax >= xmin) && (ymax >= ymin)) {
+            intr = (a
