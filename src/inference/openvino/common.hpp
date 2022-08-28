@@ -719,4 +719,9 @@ public:
         float addendum;
         if (xmax > 1 || ymax > 1)
             addendum = 1;
+        else
+            addendum = 0;
+
+        // intersection
+        float intr;
     
