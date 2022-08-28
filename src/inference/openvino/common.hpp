@@ -727,4 +727,8 @@ public:
         if ((xmax >= xmin) && (ymax >= ymin)) {
             intr = (addendum + xmax - xmin) * (addendum + ymax - ymin);
         } else {
-       
+            intr = 0.0f;
+        }
+
+        // union
+        float square1 = (addendum + d
