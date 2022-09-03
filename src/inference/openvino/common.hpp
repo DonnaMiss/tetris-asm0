@@ -731,4 +731,5 @@ public:
         }
 
         // union
-        float square1 = (addendum + detectedObject1.xmax - detectedObject1.xmin) * (addendum + detectedObject1.ymax - detectedObje
+        float square1 = (addendum + detectedObject1.xmax - detectedObject1.xmin) * (addendum + detectedObject1.ymax - detectedObject1.ymin);
+        float square2 = (addendum + detectedObject2.xmax - detec
