@@ -734,4 +734,7 @@ public:
         float square1 = (addendum + detectedObject1.xmax - detectedObject1.xmin) * (addendum + detectedObject1.ymax - detectedObject1.ymin);
         float square2 = (addendum + detectedObject2.xmax - detectedObject2.xmin) * (addendum + detectedObject2.ymax - detectedObject2.ymin);
 
-        fl
+        float unn = square1 + square2 - intr;
+
+        return static_cast<float>(intr) / unn;
+ 
