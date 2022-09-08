@@ -737,4 +737,7 @@ public:
         float unn = square1 + square2 - intr;
 
         return static_cast<float>(intr) / unn;
- 
+    }
+
+    DetectedObject scale(float scale_x, float scale_y) const {
+        return DetectedObject
