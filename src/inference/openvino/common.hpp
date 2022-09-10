@@ -740,4 +740,10 @@ public:
     }
 
     DetectedObject scale(float scale_x, float scale_y) const {
-        return DetectedObject(objectType, xmin * scale_x, ymin * scale_y, xmax * scale_x, ymax * scale_y, p
+        return DetectedObject(objectType, xmin * scale_x, ymin * scale_y, xmax * scale_x, ymax * scale_y, prob, difficult);
+    }
+};
+
+class ImageDescription {
+public:
+    const std::list<DetectedObje
