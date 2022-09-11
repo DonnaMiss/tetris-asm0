@@ -746,4 +746,7 @@ public:
 
 class ImageDescription {
 public:
-    const std::list<DetectedObje
+    const std::list<DetectedObject> alist;
+    const bool check_probs;
+
+    explicit ImageDescription(const
