@@ -754,4 +754,5 @@ public:
     }
 
     static float ioUMultiple(const ImageDescription &detectedObjects, const ImageDescription &desiredObjects) {
- 
+        const ImageDescription *detectedObjectsSmall, *detectedObjectsBig;
+        bool check
