@@ -749,4 +749,5 @@ public:
     const std::list<DetectedObject> alist;
     const bool check_probs;
 
-    explicit ImageDescription(const
+    explicit ImageDescription(const std::list<DetectedObject> &_alist, bool _check_probs = false)
+            : ali
