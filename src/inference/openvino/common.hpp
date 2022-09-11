@@ -750,4 +750,7 @@ public:
     const bool check_probs;
 
     explicit ImageDescription(const std::list<DetectedObject> &_alist, bool _check_probs = false)
-            : ali
+            : alist(_alist), check_probs(_check_probs) {
+    }
+
+    static float ioUMultiple(const Ima
