@@ -755,4 +755,6 @@ public:
 
     static float ioUMultiple(const ImageDescription &detectedObjects, const ImageDescription &desiredObjects) {
         const ImageDescription *detectedObjectsSmall, *detectedObjectsBig;
-        bool check
+        bool check_probs = desiredObjects.check_probs;
+
+        if (detectedObjects.alist.size() < desired
