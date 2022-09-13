@@ -757,4 +757,5 @@ public:
         const ImageDescription *detectedObjectsSmall, *detectedObjectsBig;
         bool check_probs = desiredObjects.check_probs;
 
-        if (detectedObjects.alist.size() < desired
+        if (detectedObjects.alist.size() < desiredObjects.alist.size()) {
+            detectedObjectsSmall = &detectedObjects;
