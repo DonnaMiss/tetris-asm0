@@ -761,4 +761,5 @@ public:
             detectedObjectsSmall = &detectedObjects;
             detectedObjectsBig = &desiredObjects;
         } else {
-            d
+            detectedObjectsSmall = &desiredObjects;
+            detectedObjectsBig = &detectedO
