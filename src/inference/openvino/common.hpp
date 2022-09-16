@@ -759,3 +759,6 @@ public:
 
         if (detectedObjects.alist.size() < desiredObjects.alist.size()) {
             detectedObjectsSmall = &detectedObjects;
+            detectedObjectsBig = &desiredObjects;
+        } else {
+            d
