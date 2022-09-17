@@ -762,4 +762,7 @@ public:
             detectedObjectsBig = &desiredObjects;
         } else {
             detectedObjectsSmall = &desiredObjects;
-            detectedObjectsBig = &detectedO
+            detectedObjectsBig = &detectedObjects;
+        }
+
+        std::list<DetectedObject> doS = detectedObjectsSmall->ali
