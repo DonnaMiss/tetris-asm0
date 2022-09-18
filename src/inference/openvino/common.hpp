@@ -768,3 +768,6 @@ public:
         std::list<DetectedObject> doS = detectedObjectsSmall->alist;
         std::list<DetectedObject> doB = detectedObjectsBig->alist;
 
+        float fullScore = 0.0f;
+        while (doS.size() > 0) {
+            float score = 
