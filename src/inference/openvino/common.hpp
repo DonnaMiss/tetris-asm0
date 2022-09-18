@@ -770,4 +770,6 @@ public:
 
         float fullScore = 0.0f;
         while (doS.size() > 0) {
-            float score = 
+            float score = 0.0f;
+            std::list<DetectedObject>::iterator bestJ = doB.end();
+            for (a
