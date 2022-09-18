@@ -765,4 +765,6 @@ public:
             detectedObjectsBig = &detectedObjects;
         }
 
-        std::list<DetectedObject> doS = detectedObjectsSmall->ali
+        std::list<DetectedObject> doS = detectedObjectsSmall->alist;
+        std::list<DetectedObject> doB = detectedObjectsBig->alist;
+
