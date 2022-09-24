@@ -777,4 +777,8 @@ public:
                 if (score < curscore) {
                     score = curscore;
                     bestJ = j;
-            
+                }
+            }
+
+            float coeff = 1.0;
+            if (check_
