@@ -775,4 +775,6 @@ public:
             for (auto j = doB.begin(); j != doB.end(); j++) {
                 float curscore = DetectedObject::ioU(*doS.begin(), *j);
                 if (score < curscore) {
+                    score = curscore;
+                    bestJ = j;
             
