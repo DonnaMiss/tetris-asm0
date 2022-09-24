@@ -773,4 +773,6 @@ public:
             float score = 0.0f;
             std::list<DetectedObject>::iterator bestJ = doB.end();
             for (auto j = doB.begin(); j != doB.end(); j++) {
-                float curscore = DetectedOb
+                float curscore = DetectedObject::ioU(*doS.begin(), *j);
+                if (score < curscore) {
+            
