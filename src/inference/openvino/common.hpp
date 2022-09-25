@@ -784,4 +784,8 @@ public:
             if (check_probs) {
                 if (bestJ != doB.end()) {
                     float mn = std::min((*bestJ).prob, (*doS.begin()).prob);
-                    float mx = std::max((*
+                    float mx = std::max((*bestJ).prob, (*doS.begin()).prob);
+
+                    coeff = mn/mx;
+                }
+   
