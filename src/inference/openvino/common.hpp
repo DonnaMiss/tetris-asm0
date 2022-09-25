@@ -788,4 +788,7 @@ public:
 
                     coeff = mn/mx;
                 }
-   
+            }
+
+            doS.pop_front();
+            if (bestJ != doB.end()) doB.eras
