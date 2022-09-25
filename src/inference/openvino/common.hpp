@@ -781,4 +781,6 @@ public:
             }
 
             float coeff = 1.0;
-            if (check_
+            if (check_probs) {
+                if (bestJ != doB.end()) {
+                    float mn = std::min(
