@@ -791,4 +791,7 @@ public:
             }
 
             doS.pop_front();
-            if (bestJ != doB.end()) doB.eras
+            if (bestJ != doB.end()) doB.erase(bestJ);
+            fullScore += coeff * score;
+        }
+        fullSc
