@@ -794,4 +794,10 @@ public:
             if (bestJ != doB.end()) doB.erase(bestJ);
             fullScore += coeff * score;
         }
-        fullSc
+        fullScore /= detectedObjectsBig->alist.size();
+
+
+        return fullScore;
+    }
+
+    Ima
