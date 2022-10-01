@@ -803,4 +803,7 @@ public:
     ImageDescription scale(float scale_x, float scale_y) const {
         std::list<DetectedObject> slist;
         for (auto& dob : alist) {
-            slist.push_back(dob.sc
+            slist.push_back(dob.scale(scale_x, scale_y));
+        }
+        return ImageDescription(slist, check_probs);
+ 
