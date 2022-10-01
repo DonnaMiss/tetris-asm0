@@ -800,4 +800,5 @@ public:
         return fullScore;
     }
 
-    Ima
+    ImageDescription scale(float scale_x, float scale_y) const {
+        std::list<DetectedObj
