@@ -806,4 +806,10 @@ public:
             slist.push_back(dob.scale(scale_x, scale_y));
         }
         return ImageDescription(slist, check_probs);
- 
+    }
+};
+
+struct AveragePrecisionCalculator {
+private:
+    enum MatchKind {
+        TruePositive
