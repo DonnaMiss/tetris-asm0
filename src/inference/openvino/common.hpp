@@ -812,4 +812,8 @@ public:
 struct AveragePrecisionCalculator {
 private:
     enum MatchKind {
-        TruePositive
+        TruePositive, FalsePositive
+    };
+
+    /**
+     * Here we count all TP and FP matc
