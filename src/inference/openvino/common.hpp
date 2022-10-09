@@ -818,4 +818,9 @@ private:
     /**
      * Here we count all TP and FP matches for all the classes in all the images.
      */
-    std::map<int, std::vector<st
+    std::map<int, std::vector<std::pair<double, MatchKind>>> matches;
+
+    std::map<int, int> N;
+
+    double threshold;
+
