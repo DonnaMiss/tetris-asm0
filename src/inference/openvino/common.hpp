@@ -824,3 +824,4 @@ private:
 
     double threshold;
 
+    static bool SortBBoxDescend(const DetectedObject& bbox1,
