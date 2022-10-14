@@ -824,4 +824,6 @@ private:
 
     double threshold;
 
-    static bool SortBBoxDescend(const DetectedObject& bbox1,
+    static bool SortBBoxDescend(const DetectedObject& bbox1, const DetectedObject& bbox2) {
+      return bbox1.prob > bbox2.prob;
+    }
