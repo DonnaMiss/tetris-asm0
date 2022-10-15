@@ -828,4 +828,9 @@ private:
       return bbox1.prob > bbox2.prob;
     }
 
-    static bool SortPairDescend(const std::pair<double, MatchKind>& p1, con
+    static bool SortPairDescend(const std::pair<double, MatchKind>& p1, const std::pair<double, MatchKind>& p2) {
+      return p1.first > p2.first;
+    }
+
+public:
+  
