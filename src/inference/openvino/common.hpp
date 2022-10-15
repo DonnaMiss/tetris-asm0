@@ -827,3 +827,5 @@ private:
     static bool SortBBoxDescend(const DetectedObject& bbox1, const DetectedObject& bbox2) {
       return bbox1.prob > bbox2.prob;
     }
+
+    static bool SortPairDescend(const std::pair<double, MatchKind>& p1, con
