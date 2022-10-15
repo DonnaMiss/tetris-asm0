@@ -833,4 +833,6 @@ private:
     }
 
 public:
+    explicit AveragePrecisionCalculator(double _threshold) : threshold(_threshold) { }
+
   
