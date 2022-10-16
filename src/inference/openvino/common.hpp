@@ -838,4 +838,5 @@ public:
     // gt_bboxes -> des
     // bboxes -> det
 
-    void consumeImage(const ImageDe
+    void consumeImage(const ImageDescription &detectedObjects, const ImageDescription &desiredObjects) {
+        //
