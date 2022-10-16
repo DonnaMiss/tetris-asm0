@@ -839,4 +839,5 @@ public:
     // bboxes -> det
 
     void consumeImage(const ImageDescription &detectedObjects, const ImageDescription &desiredObjects) {
-        //
+        // Collecting IoU values
+        std::vector<bool> visited(desiredObjects.alist.s
