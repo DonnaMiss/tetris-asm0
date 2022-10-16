@@ -835,4 +835,7 @@ private:
 public:
     explicit AveragePrecisionCalculator(double _threshold) : threshold(_threshold) { }
 
-  
+    // gt_bboxes -> des
+    // bboxes -> det
+
+    void consumeImage(const ImageDe
