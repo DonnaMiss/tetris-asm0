@@ -840,4 +840,5 @@ public:
 
     void consumeImage(const ImageDescription &detectedObjects, const ImageDescription &desiredObjects) {
         // Collecting IoU values
-        std::vector<bool> visited(desiredObjects.alist.s
+        std::vector<bool> visited(desiredObjects.alist.size(), false);
+        std::vector<DetectedObject> bboxes{ std::begin(detec
