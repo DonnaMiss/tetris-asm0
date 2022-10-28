@@ -842,4 +842,7 @@ public:
         // Collecting IoU values
         std::vector<bool> visited(desiredObjects.alist.size(), false);
         std::vector<DetectedObject> bboxes{ std::begin(detectedObjects.alist), std::end(detectedObjects.alist) };
-        std::sor
+        std::sort(bboxes.begin(), bboxes.end(), SortBBoxDescend);
+
+
+        for (a
