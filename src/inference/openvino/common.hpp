@@ -845,4 +845,5 @@ public:
         std::sort(bboxes.begin(), bboxes.end(), SortBBoxDescend);
 
 
-        for (a
+        for (auto&& detObj : bboxes) {
+            // Searching for the best matc
