@@ -848,4 +848,6 @@ public:
         for (auto&& detObj : bboxes) {
             // Searching for the best match to this detection
             // Searching for desired object
-            float overlap_m
+            float overlap_max = -1;
+            int jmax = -1;
+            auto desmax = desiredObjects.alist.en
