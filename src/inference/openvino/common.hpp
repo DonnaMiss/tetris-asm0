@@ -850,4 +850,7 @@ public:
             // Searching for desired object
             float overlap_max = -1;
             int jmax = -1;
-            auto desmax = desiredObjects.alist.en
+            auto desmax = desiredObjects.alist.end();
+
+            int j = 0;
+            for (auto desObj = desiredObjects.alist.begin(
