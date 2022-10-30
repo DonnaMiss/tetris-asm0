@@ -860,4 +860,7 @@ public:
                     jmax = j;
                     desmax = desObj;
                 }
-        
+            }
+
+            MatchKind mk;
+            if (overlap_max >= threshold) {
