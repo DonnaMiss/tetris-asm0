@@ -853,4 +853,5 @@ public:
             auto desmax = desiredObjects.alist.end();
 
             int j = 0;
-            for (auto desObj = desiredObjects.alist.begin(
+            for (auto desObj = desiredObjects.alist.begin(); desObj != desiredObjects.alist.end(); desObj++, j++) {
+       
