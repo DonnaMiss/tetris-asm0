@@ -857,4 +857,7 @@ public:
                 double iou = DetectedObject::ioU(detObj, *desObj);
                 if (iou > overlap_max) {
                     overlap_max = static_cast<float>(iou);
+                    jmax = j;
+                    desmax = desObj;
+                }
         
