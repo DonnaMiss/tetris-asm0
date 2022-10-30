@@ -854,4 +854,5 @@ public:
 
             int j = 0;
             for (auto desObj = desiredObjects.alist.begin(); desObj != desiredObjects.alist.end(); desObj++, j++) {
-       
+                double iou = DetectedObject::ioU(detObj, *desObj);
+                if (iou > overlap_ma
