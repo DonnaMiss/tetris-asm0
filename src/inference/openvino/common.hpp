@@ -866,4 +866,5 @@ public:
             if (overlap_max >= threshold) {
                 if (!desmax->difficult) {
                     if (!visited[jmax]) {
-              
+                        mk = TruePositive;
+                        visited[jmax]
