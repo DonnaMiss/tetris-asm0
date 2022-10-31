@@ -864,3 +864,6 @@ public:
 
             MatchKind mk;
             if (overlap_max >= threshold) {
+                if (!desmax->difficult) {
+                    if (!visited[jmax]) {
+              
