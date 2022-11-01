@@ -867,4 +867,7 @@ public:
                 if (!desmax->difficult) {
                     if (!visited[jmax]) {
                         mk = TruePositive;
-                        visited[jmax]
+                        visited[jmax] = true;
+                    } else {
+                        mk = FalsePositive;
+    
