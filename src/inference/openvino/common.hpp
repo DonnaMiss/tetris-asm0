@@ -882,4 +882,8 @@ public:
         for (auto desObj = desiredObjects.alist.begin(); desObj != desiredObjects.alist.end(); desObj++) {
             if (!desObj->difficult) {
                 N[desObj->objectType]++;
-         
+                }
+            }
+        }
+
+    std::map<int, double> calculateAveragePrecisionPerClass(
