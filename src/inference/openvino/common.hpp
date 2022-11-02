@@ -880,4 +880,6 @@ public:
         }
 
         for (auto desObj = desiredObjects.alist.begin(); desObj != desiredObjects.alist.end(); desObj++) {
-            if (!de
+            if (!desObj->difficult) {
+                N[desObj->objectType]++;
+         
