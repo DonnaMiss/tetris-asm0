@@ -875,4 +875,8 @@ public:
                 }
             } else {
                 mk = FalsePositive;
-                matches[detObj.objectType].push_back(std::make_pair(det
+                matches[detObj.objectType].push_back(std::make_pair(detObj.prob, mk));
+            }
+        }
+
+        for (auto desObj = desiredObjects.
