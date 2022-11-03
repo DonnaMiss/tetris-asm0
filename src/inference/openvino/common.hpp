@@ -890,4 +890,9 @@ public:
         /**
          * Precision-to-TP curve per class (a variation of precision-to-recall curve without dividing into N)
          */
-        std::
+        std::map<int, std::map<int, double>> precisionToTP;
+
+
+        std::map<int, double> res;
+
+   
