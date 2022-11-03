@@ -888,4 +888,6 @@ public:
 
     std::map<int, double> calculateAveragePrecisionPerClass() const {
         /**
-         * Precision-to-TP curve per class (a variati
+         * Precision-to-TP curve per class (a variation of precision-to-recall curve without dividing into N)
+         */
+        std::
