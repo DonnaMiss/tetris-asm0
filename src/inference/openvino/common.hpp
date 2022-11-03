@@ -886,4 +886,6 @@ public:
             }
         }
 
-    std::map<int, double> calculateAveragePrecisionPerClass(
+    std::map<int, double> calculateAveragePrecisionPerClass() const {
+        /**
+         * Precision-to-TP curve per class (a variati
