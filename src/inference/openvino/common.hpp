@@ -897,4 +897,7 @@ public:
 
         for (auto m : matches) {
             // Sorting
-            std::sort(m.second.begin(
+            std::sort(m.second.begin(), m.second.end(), SortPairDescend);
+
+            int clazz = m.first;
+    
