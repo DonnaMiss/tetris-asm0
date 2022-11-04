@@ -895,4 +895,6 @@ public:
 
         std::map<int, double> res;
 
-   
+        for (auto m : matches) {
+            // Sorting
+            std::sort(m.second.begin(
