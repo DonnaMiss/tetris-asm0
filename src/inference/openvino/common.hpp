@@ -908,4 +908,5 @@ public:
             for (auto mm : m.second) {
                 // Here we are descending in a probability value
                 MatchKind mk = mm.second;
-         
+                if (mk == TruePositive) TP++;
+                else if (mk == Fal
