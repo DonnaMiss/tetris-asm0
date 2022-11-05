@@ -900,4 +900,7 @@ public:
             std::sort(m.second.begin(), m.second.end(), SortPairDescend);
 
             int clazz = m.first;
-    
+            int TP = 0, FP = 0;
+
+            std::vector<double> prec;
+            std
