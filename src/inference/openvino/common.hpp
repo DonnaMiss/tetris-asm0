@@ -906,4 +906,6 @@ public:
             std::vector<double> rec;
 
             for (auto mm : m.second) {
-                // Here we are descendi
+                // Here we are descending in a probability value
+                MatchKind mk = mm.second;
+         
