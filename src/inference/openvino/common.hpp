@@ -909,4 +909,7 @@ public:
                 // Here we are descending in a probability value
                 MatchKind mk = mm.second;
                 if (mk == TruePositive) TP++;
-                else if (mk == Fal
+                else if (mk == FalsePositive) FP++;
+
+                double precision = static_cast<double>(TP) / (TP + FP);
+     
