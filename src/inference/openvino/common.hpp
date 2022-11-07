@@ -917,4 +917,6 @@ public:
                     recall = static_cast<double>(TP) / N.at(clazz);
                 }
 
-     
+                prec.push_back(precision);
+                rec.push_back(recall);
+            }
