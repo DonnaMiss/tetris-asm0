@@ -914,4 +914,7 @@ public:
                 double precision = static_cast<double>(TP) / (TP + FP);
                 double recall = 0;
                 if (N.find(clazz) != N.end()) {
-       
+                    recall = static_cast<double>(TP) / N.at(clazz);
+                }
+
+     
