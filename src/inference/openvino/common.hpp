@@ -912,4 +912,6 @@ public:
                 else if (mk == FalsePositive) FP++;
 
                 double precision = static_cast<double>(TP) / (TP + FP);
-     
+                double recall = 0;
+                if (N.find(clazz) != N.end()) {
+       
