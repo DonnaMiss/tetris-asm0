@@ -923,4 +923,6 @@ public:
 
             int num = rec.size();
 
-            // 11point 
+            // 11point from Caffe
+            double ap = 0;
+            std::vector<float> max_precs(11, 0.
