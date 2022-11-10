@@ -928,4 +928,5 @@ public:
             std::vector<float> max_precs(11, 0.);
             int start_idx = num - 1;
             for (int j = 10; j >= 0; --j) {
-      
+                for (int i = start_idx; i >= 0; --i) {
+                    if (rec[i] < 
