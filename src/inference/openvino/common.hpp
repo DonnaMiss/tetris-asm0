@@ -929,4 +929,7 @@ public:
             int start_idx = num - 1;
             for (int j = 10; j >= 0; --j) {
                 for (int i = start_idx; i >= 0; --i) {
-                    if (rec[i] < 
+                    if (rec[i] < j / 10.) {
+                        start_idx = i;
+                        if (j > 0) {
+ 
