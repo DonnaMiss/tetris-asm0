@@ -943,4 +943,9 @@ public:
                 }
             }
             for (int j = 10; j >= 0; --j) {
-                ap +
+                ap += max_precs[j] / 11;
+            }
+            res[clazz] = ap;
+        }
+
+        
