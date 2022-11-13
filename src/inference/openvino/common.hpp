@@ -937,4 +937,7 @@ public:
                         break;
                     } else {
                         if (max_precs[j] < prec[i]) {
-                            max_precs[j] = static_cast<floa
+                            max_precs[j] = static_cast<float>(prec[i]);
+                        }
+                    }
+               
