@@ -948,4 +948,10 @@ public:
             res[clazz] = ap;
         }
 
-        
+        return res;
+    }
+};
+
+/**
+* @brief Adds colored rectangles to the image
+* @param 
