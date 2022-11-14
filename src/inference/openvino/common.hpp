@@ -957,4 +957,6 @@ public:
 * @param data - data where rectangles are put
 * @param height - height of the rectangle
 * @param width - width of the rectangle
-* @param detectedOb
+* @param detectedObjects - vector of detected objects
+*/
+static UNUSED void addRectangles(u
