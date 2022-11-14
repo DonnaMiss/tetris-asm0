@@ -954,4 +954,5 @@ public:
 
 /**
 * @brief Adds colored rectangles to the image
-* @param 
+* @param data - data where rectangles are put
+* @param height - height of 
