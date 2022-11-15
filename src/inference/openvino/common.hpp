@@ -959,4 +959,7 @@ public:
 * @param width - width of the rectangle
 * @param detectedObjects - vector of detected objects
 */
-static UNUSED void addRectangles(unsigned char *data, size_t height, size_t width, std::vector<DetectedObject> de
+static UNUSED void addRectangles(unsigned char *data, size_t height, size_t width, std::vector<DetectedObject> detectedObjects) {
+    std::vector<Color> colors = {
+        { 128, 64,  128 },
+        { 2
