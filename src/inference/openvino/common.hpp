@@ -959,4 +959,4 @@ public:
 * @param width - width of the rectangle
 * @param detectedObjects - vector of detected objects
 */
-static UNUSED void addRectangles(u
+static UNUSED void addRectangles(unsigned char *data, size_t height, size_t width, std::vector<DetectedObject> de
