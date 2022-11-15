@@ -962,4 +962,7 @@ public:
 static UNUSED void addRectangles(unsigned char *data, size_t height, size_t width, std::vector<DetectedObject> detectedObjects) {
     std::vector<Color> colors = {
         { 128, 64,  128 },
-        { 2
+        { 232, 35,  244 },
+        { 70,  70,  70 },
+        { 156, 102, 102 },
+        { 153, 153
