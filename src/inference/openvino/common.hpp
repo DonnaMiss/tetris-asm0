@@ -988,4 +988,5 @@ static UNUSED void addRectangles(unsigned char *data, size_t height, size_t widt
         int cls = detectedObjects[i].objectType % colors.size();
 
         int xmin = static_cast<int>(detectedObjects[i].xmin * width);
-        int xmax = stat
+        int xmax = static_cast<int>(detectedObjects[i].xmax * width);
+        int ymin = static_cast<int>(detected
