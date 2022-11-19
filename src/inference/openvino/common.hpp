@@ -990,4 +990,7 @@ static UNUSED void addRectangles(unsigned char *data, size_t height, size_t widt
         int xmin = static_cast<int>(detectedObjects[i].xmin * width);
         int xmax = static_cast<int>(detectedObjects[i].xmax * width);
         int ymin = static_cast<int>(detectedObjects[i].ymin * height);
-        int ymax = static_cast<int>(detectedObjects[i].y
+        int ymax = static_cast<int>(detectedObjects[i].ymax * height);
+
+        size_t shift_first = ymin*width * 3;
+        size_t shift_second = yma
