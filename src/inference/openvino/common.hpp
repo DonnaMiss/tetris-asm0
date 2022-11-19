@@ -993,4 +993,6 @@ static UNUSED void addRectangles(unsigned char *data, size_t height, size_t widt
         int ymax = static_cast<int>(detectedObjects[i].ymax * height);
 
         size_t shift_first = ymin*width * 3;
-        size_t shift_second = yma
+        size_t shift_second = ymax*width * 3;
+        for (int x = xmin; x < xmax; x++) {
+            data
