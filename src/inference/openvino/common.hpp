@@ -1000,4 +1000,8 @@ static UNUSED void addRectangles(unsigned char *data, size_t height, size_t widt
             data[shift_first + x * 3 + 2] = colors.at(cls).blue();
             data[shift_second + x * 3] = colors.at(cls).red();
             data[shift_second + x * 3 + 1] = colors.at(cls).green();
-            data[shift_second + x * 3 + 2]
+            data[shift_second + x * 3 + 2] = colors.at(cls).blue();
+        }
+
+        shift_first = xmin * 3;
+        
