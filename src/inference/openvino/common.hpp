@@ -1019,4 +1019,6 @@ static UNUSED void addRectangles(unsigned char *data, size_t height, size_t widt
 inline std::size_t getTensorWidth(const InferenceEngine::TensorDesc& desc) {
     const auto& layout = desc.getLayout();
     const auto& dims = desc.getDims();
-    co
+    const auto& size = dims.size();
+    if ((size >= 2) &&
+        (layout == Inference
