@@ -1014,3 +1014,7 @@ static UNUSED void addRectangles(unsigned char *data, size_t height, size_t widt
             data[shift_second + y*width * 3 + 2] = colors.at(cls).blue();
         }
     }
+}
+
+inline std::size_t getTensorWidth(const InferenceEngine::TensorDesc& desc) {
+    
