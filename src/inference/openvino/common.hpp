@@ -1023,4 +1023,5 @@ inline std::size_t getTensorWidth(const InferenceEngine::TensorDesc& desc) {
     if ((size >= 2) &&
         (layout == InferenceEngine::Layout::NCHW   ||
          layout == InferenceEngine::Layout::NHWC   ||
-     
+         layout == InferenceEngine::Layout::NCDHW  ||
+         layout == InferenceEngine:
