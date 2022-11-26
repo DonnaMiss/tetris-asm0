@@ -1031,4 +1031,5 @@ inline std::size_t getTensorWidth(const InferenceEngine::TensorDesc& desc) {
          layout == InferenceEngine::Layout::GOIDHW ||
          layout == InferenceEngine::Layout::CHW    ||
          layout == InferenceEngine::Layout::HW)) {
- 
+        // Regardless of layout, dimensions are stored in fixed order
+        retur
