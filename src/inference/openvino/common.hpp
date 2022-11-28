@@ -1034,4 +1034,9 @@ inline std::size_t getTensorWidth(const InferenceEngine::TensorDesc& desc) {
         // Regardless of layout, dimensions are stored in fixed order
         return dims.back();
     } else {
-        THROW_IE_EXCEPTION << "Tensor does not
+        THROW_IE_EXCEPTION << "Tensor does not have width dimension";
+    }
+    return 0;
+}
+
+inline std::size_t getTens
