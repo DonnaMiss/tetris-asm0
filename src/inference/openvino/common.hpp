@@ -1044,4 +1044,6 @@ inline std::size_t getTensorHeight(const InferenceEngine::TensorDesc& desc) {
     const auto& dims = desc.getDims();
     const auto& size = dims.size();
     if ((size >= 2) &&
-        (layout == InferenceEngine::Lay
+        (layout == InferenceEngine::Layout::NCHW   ||
+         layout == InferenceEngine::Layout::NHWC   ||
+         layout == InferenceEng
