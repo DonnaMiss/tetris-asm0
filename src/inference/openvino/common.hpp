@@ -1040,4 +1040,6 @@ inline std::size_t getTensorWidth(const InferenceEngine::TensorDesc& desc) {
 }
 
 inline std::size_t getTensorHeight(const InferenceEngine::TensorDesc& desc) {
-    const auto& layout = desc.get
+    const auto& layout = desc.getLayout();
+    const auto& dims = desc.getDims();
+    const auto& size = di
