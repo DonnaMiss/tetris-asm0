@@ -1052,4 +1052,6 @@ inline std::size_t getTensorHeight(const InferenceEngine::TensorDesc& desc) {
          layout == InferenceEngine::Layout::GOIHW  ||
          layout == InferenceEngine::Layout::OIDHW  ||
          layout == InferenceEngine::Layout::GOIDHW ||
-         layout == InferenceEngine::Lay
+         layout == InferenceEngine::Layout::CHW    ||
+         layout == InferenceEngine::Layout::HW)) {
+        // Regardless of layout
