@@ -1056,4 +1056,5 @@ inline std::size_t getTensorHeight(const InferenceEngine::TensorDesc& desc) {
          layout == InferenceEngine::Layout::HW)) {
         // Regardless of layout, dimensions are stored in fixed order
         return dims.at(size - 2);
-    
+    } else {
+        THROW_IE_EXCEPTION << "Tensor does not have height dimension"
