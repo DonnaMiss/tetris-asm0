@@ -1062,4 +1062,5 @@ inline std::size_t getTensorHeight(const InferenceEngine::TensorDesc& desc) {
     return 0;
 }
 
-inline std::size_t getTensorChannels(const 
+inline std::size_t getTensorChannels(const InferenceEngine::TensorDesc& desc) {
+    const auto& layout = desc.g
