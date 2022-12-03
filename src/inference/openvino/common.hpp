@@ -1068,4 +1068,6 @@ inline std::size_t getTensorChannels(const InferenceEngine::TensorDesc& desc) {
         layout == InferenceEngine::Layout::NHWC  ||
         layout == InferenceEngine::Layout::NCDHW ||
         layout == InferenceEngine::Layout::NDHWC ||
-        layout == Inf
+        layout == InferenceEngine::Layout::C     ||
+        layout == InferenceEngine::Layout::CHW   ||
+        layout
