@@ -1065,4 +1065,5 @@ inline std::size_t getTensorHeight(const InferenceEngine::TensorDesc& desc) {
 inline std::size_t getTensorChannels(const InferenceEngine::TensorDesc& desc) {
     const auto& layout = desc.getLayout();
     if (layout == InferenceEngine::Layout::NCHW  ||
-        l
+        layout == InferenceEngine::Layout::NHWC  ||
+        layout == InferenceEngine::Layou
