@@ -1075,4 +1075,5 @@ inline std::size_t getTensorChannels(const InferenceEngine::TensorDesc& desc) {
         // Regardless of layout, dimensions are stored in fixed order
         const auto& dims = desc.getDims();
         switch (desc.getLayoutByDims(dims)) {
-            cas
+            case InferenceEngine::Layout::C:     return dims.at(0);
+            case InferenceEngine::
