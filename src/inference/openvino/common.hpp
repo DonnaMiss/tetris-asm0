@@ -1076,4 +1076,5 @@ inline std::size_t getTensorChannels(const InferenceEngine::TensorDesc& desc) {
         const auto& dims = desc.getDims();
         switch (desc.getLayoutByDims(dims)) {
             case InferenceEngine::Layout::C:     return dims.at(0);
-            case InferenceEngine::
+            case InferenceEngine::Layout::NC:    return dims.at(1);
+            case InferenceEngine::Layou
