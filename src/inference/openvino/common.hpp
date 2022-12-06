@@ -1078,4 +1078,5 @@ inline std::size_t getTensorChannels(const InferenceEngine::TensorDesc& desc) {
             case InferenceEngine::Layout::C:     return dims.at(0);
             case InferenceEngine::Layout::NC:    return dims.at(1);
             case InferenceEngine::Layout::CHW:   return dims.at(0);
-            case InferenceEngine::Layout::NCHW:  r
+            case InferenceEngine::Layout::NCHW:  return dims.at(1);
+            case InferenceEngine::Layout::NCDHW: return dims.a
