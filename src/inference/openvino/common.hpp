@@ -1081,4 +1081,6 @@ inline std::size_t getTensorChannels(const InferenceEngine::TensorDesc& desc) {
             case InferenceEngine::Layout::NCHW:  return dims.at(1);
             case InferenceEngine::Layout::NCDHW: return dims.at(1);
             case InferenceEngine::Layout::SCALAR:   // [[fallthrough]]
-            case Inference
+            case InferenceEngine::Layout::BLOCKED:  // [[fallthrough]]
+            default:
+           
