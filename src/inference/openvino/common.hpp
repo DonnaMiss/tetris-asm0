@@ -1086,4 +1086,9 @@ inline std::size_t getTensorChannels(const InferenceEngine::TensorDesc& desc) {
                 THROW_IE_EXCEPTION << "Tensor does not have channels dimension";
         }
     } else {
-        THROW_IE_EXCEPTION << "Tensor does not have channels
+        THROW_IE_EXCEPTION << "Tensor does not have channels dimension";
+    }
+    return 0;
+}
+
+inline std::size_t getTensorBatch(const InferenceEngin
