@@ -1084,4 +1084,6 @@ inline std::size_t getTensorChannels(const InferenceEngine::TensorDesc& desc) {
             case InferenceEngine::Layout::BLOCKED:  // [[fallthrough]]
             default:
                 THROW_IE_EXCEPTION << "Tensor does not have channels dimension";
-       
+        }
+    } else {
+        THROW_IE_EXCEPTION << "Tensor does not have channels
