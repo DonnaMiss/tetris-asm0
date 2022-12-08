@@ -1091,4 +1091,6 @@ inline std::size_t getTensorChannels(const InferenceEngine::TensorDesc& desc) {
     return 0;
 }
 
-inline std::size_t getTensorBatch(const InferenceEngin
+inline std::size_t getTensorBatch(const InferenceEngine::TensorDesc& desc) {
+    const auto& layout = desc.getLayout();
+    if
