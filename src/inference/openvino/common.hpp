@@ -1094,4 +1094,5 @@ inline std::size_t getTensorChannels(const InferenceEngine::TensorDesc& desc) {
 inline std::size_t getTensorBatch(const InferenceEngine::TensorDesc& desc) {
     const auto& layout = desc.getLayout();
     if (layout == InferenceEngine::Layout::NCHW  ||
-        layout == I
+        layout == InferenceEngine::Layout::NHWC  ||
+        layout == InferenceEngine::Layout::NCDH
