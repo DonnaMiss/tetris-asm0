@@ -1097,4 +1097,6 @@ inline std::size_t getTensorBatch(const InferenceEngine::TensorDesc& desc) {
         layout == InferenceEngine::Layout::NHWC  ||
         layout == InferenceEngine::Layout::NCDHW ||
         layout == InferenceEngine::Layout::NDHWC ||
-        layout 
+        layout == InferenceEngine::Layout::NC    ||
+        layout == InferenceEngine::Layout::CN) {
+       
