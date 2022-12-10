@@ -1101,4 +1101,6 @@ inline std::size_t getTensorBatch(const InferenceEngine::TensorDesc& desc) {
         layout == InferenceEngine::Layout::CN) {
         // Regardless of layout, dimensions are stored in fixed order
         const auto& dims = desc.getDims();
-        switch (desc.getLayoutByDims(dims)) 
+        switch (desc.getLayoutByDims(dims)) {
+            case InferenceEngine::Layout::NC:    return dims.at(0);
+            
