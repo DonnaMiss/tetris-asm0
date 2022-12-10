@@ -1104,4 +1104,5 @@ inline std::size_t getTensorBatch(const InferenceEngine::TensorDesc& desc) {
         switch (desc.getLayoutByDims(dims)) {
             case InferenceEngine::Layout::NC:    return dims.at(0);
             case InferenceEngine::Layout::NCHW:  return dims.at(0);
-            case Infe
+            case InferenceEngine::Layout::NCDHW: return dims.at(0);
+            case InferenceEngine::Layout::CHW:      
