@@ -1107,4 +1107,5 @@ inline std::size_t getTensorBatch(const InferenceEngine::TensorDesc& desc) {
             case InferenceEngine::Layout::NCDHW: return dims.at(0);
             case InferenceEngine::Layout::CHW:      // [[fallthrough]]
             case InferenceEngine::Layout::C:        // [[fallthrough]]
-            case InferenceEngine::Layout::SCALAR:   // [[fallth
+            case InferenceEngine::Layout::SCALAR:   // [[fallthrough]]
+            case InferenceEngine::Layout::BLOCKED:  // [[fallthrough]]
