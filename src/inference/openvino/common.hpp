@@ -1119,4 +1119,7 @@ inline std::size_t getTensorBatch(const InferenceEngine::TensorDesc& desc) {
 }
 
 inline void showAvailableDevices() {
-    Infer
+    InferenceEngine::Core ie;
+    std::vector<std::string> devices = ie.GetAvailableDevices();
+
+  
