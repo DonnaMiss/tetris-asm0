@@ -1110,4 +1110,7 @@ inline std::size_t getTensorBatch(const InferenceEngine::TensorDesc& desc) {
             case InferenceEngine::Layout::SCALAR:   // [[fallthrough]]
             case InferenceEngine::Layout::BLOCKED:  // [[fallthrough]]
             default:
-                THROW_IE_EXCEPTION << "Tensor does not have channels di
+                THROW_IE_EXCEPTION << "Tensor does not have channels dimension";
+        }
+    } else {
+        THROW_IE_EXCEPTION << "Tensor does not have c
