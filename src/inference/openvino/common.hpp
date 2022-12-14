@@ -1124,4 +1124,7 @@ inline void showAvailableDevices() {
 
     std::cout << std::endl;
     std::cout << "Available target devices:";
-    for (const auto& de
+    for (const auto& device : devices) {
+        std::cout << "  " << device;
+    }
+    std::cout << std::endl
