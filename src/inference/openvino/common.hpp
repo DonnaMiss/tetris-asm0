@@ -1122,4 +1122,6 @@ inline void showAvailableDevices() {
     InferenceEngine::Core ie;
     std::vector<std::string> devices = ie.GetAvailableDevices();
 
-  
+    std::cout << std::endl;
+    std::cout << "Available target devices:";
+    for (const auto& de
