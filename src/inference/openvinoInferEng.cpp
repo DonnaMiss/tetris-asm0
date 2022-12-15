@@ -3,4 +3,7 @@
 
 using namespace InferenceEngine;
 
-static UNUSED InferenceEngine::Blob::Ptr wrapMat2Blob(const cv::M
+static UNUSED InferenceEngine::Blob::Ptr wrapMat2Blob(const cv::Mat &mat) {
+    size_t channels = mat.channels();
+    size_t height = mat.size().height;
+    siz
