@@ -1,4 +1,6 @@
 #include "openvinoInferEng.h"
 #include "./openvino/common.hpp"
 
-using nam
+using namespace InferenceEngine;
+
+static UNUSED InferenceEngine::Blob::Ptr wrapMat2Blob(const cv::M
