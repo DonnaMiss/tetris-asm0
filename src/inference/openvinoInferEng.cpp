@@ -13,4 +13,7 @@ static UNUSED InferenceEngine::Blob::Ptr wrapMat2Blob(const cv::Mat &mat) {
 
     bool is_dense =
             strideW == channels &&
-            s
+            strideH == channels * width;
+
+    if (!is_dense) THROW_IE_EXCEPTION
+                <
