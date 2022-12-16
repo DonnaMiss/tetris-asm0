@@ -9,4 +9,8 @@ static UNUSED InferenceEngine::Blob::Ptr wrapMat2Blob(const cv::Mat &mat) {
     size_t width = mat.size().width;
 
     size_t strideH = mat.step.buf[0];
-    size_t strideW = mat.s
+    size_t strideW = mat.step.buf[1];
+
+    bool is_dense =
+            strideW == channels &&
+            s
