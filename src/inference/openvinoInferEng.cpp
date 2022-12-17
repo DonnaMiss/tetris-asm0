@@ -19,4 +19,5 @@ static UNUSED InferenceEngine::Blob::Ptr wrapMat2Blob(const cv::Mat &mat) {
                 << "Doesn't support conversion from not dense cv::Mat";
 
     InferenceEngine::TensorDesc tDesc(InferenceEngine::Precision::U8,
-                                      {1, channels
+                                      {1, channels, height, width},
+                                      InferenceEng
