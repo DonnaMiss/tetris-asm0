@@ -22,4 +22,7 @@ static UNUSED InferenceEngine::Blob::Ptr wrapMat2Blob(const cv::Mat &mat) {
                                       {1, channels, height, width},
                                       InferenceEngine::Layout::NHWC);
 
-    return InferenceEngine::make_shared_blob<uint8_
+    return InferenceEngine::make_shared_blob<uint8_t>(tDesc, mat.data);
+}
+
+InferenceEng::InferenceEng(const std::string &modelDi
