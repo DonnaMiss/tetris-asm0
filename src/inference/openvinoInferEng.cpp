@@ -20,4 +20,6 @@ static UNUSED InferenceEngine::Blob::Ptr wrapMat2Blob(const cv::Mat &mat) {
 
     InferenceEngine::TensorDesc tDesc(InferenceEngine::Precision::U8,
                                       {1, channels, height, width},
-                                      InferenceEng
+                                      InferenceEngine::Layout::NHWC);
+
+    return InferenceEngine::make_shared_blob<uint8_
