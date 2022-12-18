@@ -25,4 +25,6 @@ static UNUSED InferenceEngine::Blob::Ptr wrapMat2Blob(const cv::Mat &mat) {
     return InferenceEngine::make_shared_blob<uint8_t>(tDesc, mat.data);
 }
 
-InferenceEng::InferenceEng(const std::string &modelDi
+InferenceEng::InferenceEng(const std::string &modelDir) {
+    std::cout << "Using openvino inference engine" << std::endl;
+    std::cout 
