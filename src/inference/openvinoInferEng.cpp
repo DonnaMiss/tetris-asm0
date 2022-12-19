@@ -28,4 +28,6 @@ static UNUSED InferenceEngine::Blob::Ptr wrapMat2Blob(const cv::Mat &mat) {
 InferenceEng::InferenceEng(const std::string &modelDir) {
     std::cout << "Using openvino inference engine" << std::endl;
     std::cout << "-------------------------------------------------" << std::endl;
-    std::cout <
+    std::cout << "-------------------------------------------------" << std::endl;
+
+    const std::string xmlPath = mode
