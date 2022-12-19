@@ -30,4 +30,7 @@ InferenceEng::InferenceEng(const std::string &modelDir) {
     std::cout << "-------------------------------------------------" << std::endl;
     std::cout << "-------------------------------------------------" << std::endl;
 
-    const std::string xmlPath = mode
+    const std::string xmlPath = modelDir + "/" + XML_NAME;
+
+    Core ie;
+    CNNNetwork network = ie.ReadNetwork(xml
