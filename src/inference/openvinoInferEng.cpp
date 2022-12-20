@@ -35,4 +35,6 @@ InferenceEng::InferenceEng(const std::string &modelDir) {
     Core ie;
     CNNNetwork network = ie.ReadNetwork(xmlPath);
 
-    InputInfo::Ptr inputInfo = network.getInputsInfo().begin()->s
+    InputInfo::Ptr inputInfo = network.getInputsInfo().begin()->second;
+    m_inputName = network.getInputsInfo().begin()->first;
+    inputInfo->setPrecis
