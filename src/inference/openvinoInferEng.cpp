@@ -33,4 +33,6 @@ InferenceEng::InferenceEng(const std::string &modelDir) {
     const std::string xmlPath = modelDir + "/" + XML_NAME;
 
     Core ie;
-    CNNNetwork network = ie.ReadNetwork(xml
+    CNNNetwork network = ie.ReadNetwork(xmlPath);
+
+    InputInfo::Ptr inputInfo = network.getInputsInfo().begin()->s
