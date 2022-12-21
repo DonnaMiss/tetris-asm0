@@ -41,4 +41,6 @@ InferenceEng::InferenceEng(const std::string &modelDir) {
     inputInfo->setLayout(Layout::NHWC);
 
     DataPtr outputInfo = network.getOutputsInfo().begin()->second;
-    m_outputName = network.getOutput
+    m_outputName = network.getOutputsInfo().begin()->first;
+    outputInfo->setPrecision(Precision::FP32);
+    s
