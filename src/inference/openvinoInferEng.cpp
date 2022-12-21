@@ -43,4 +43,7 @@ InferenceEng::InferenceEng(const std::string &modelDir) {
     DataPtr outputInfo = network.getOutputsInfo().begin()->second;
     m_outputName = network.getOutputsInfo().begin()->first;
     outputInfo->setPrecision(Precision::FP32);
-    s
+    std::map< std::string, std::string > options;
+
+    // Read number of threads to use
+   
