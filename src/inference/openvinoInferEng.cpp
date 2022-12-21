@@ -37,4 +37,7 @@ InferenceEng::InferenceEng(const std::string &modelDir) {
 
     InputInfo::Ptr inputInfo = network.getInputsInfo().begin()->second;
     m_inputName = network.getInputsInfo().begin()->first;
-    inputInfo->setPrecis
+    inputInfo->setPrecision(Precision::U8);
+    inputInfo->setLayout(Layout::NHWC);
+
+    Dat
