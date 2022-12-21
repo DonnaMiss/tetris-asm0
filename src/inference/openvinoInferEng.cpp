@@ -40,4 +40,5 @@ InferenceEng::InferenceEng(const std::string &modelDir) {
     inputInfo->setPrecision(Precision::U8);
     inputInfo->setLayout(Layout::NHWC);
 
-    Dat
+    DataPtr outputInfo = network.getOutputsInfo().begin()->second;
+    m_outputName = network.getOutput
