@@ -47,4 +47,4 @@ InferenceEng::InferenceEng(const std::string &modelDir) {
 
     // Read number of threads to use
     if(const char* envP = std::getenv("OMP_NUM_THREADS")) {
-        // https://doc
+        // https://docs.openvinotoolkit.org/cn/2021.1/namespaceInferenceEngine_1_1PluginConfig
