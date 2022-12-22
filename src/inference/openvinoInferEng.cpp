@@ -46,4 +46,5 @@ InferenceEng::InferenceEng(const std::string &modelDir) {
     std::map< std::string, std::string > options;
 
     // Read number of threads to use
-   
+    if(const char* envP = std::getenv("OMP_NUM_THREADS")) {
+        // https://doc
