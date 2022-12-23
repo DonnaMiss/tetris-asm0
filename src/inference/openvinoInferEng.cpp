@@ -50,4 +50,5 @@ InferenceEng::InferenceEng(const std::string &modelDir) {
         // https://docs.openvinotoolkit.org/cn/2021.1/namespaceInferenceEngine_1_1PluginConfigParams.html#a1264fc1aa7f58c908e884eb8fbaff8b2
         std::stringstream strValue;
         strValue << envP;
-        options[PluginConfigParams::KEY_CPU_BIND_THREAD] =
+        options[PluginConfigParams::KEY_CPU_BIND_THREAD] = PluginConfigParams::NO;
+        options[PluginConfigParams::KEY_CPU_THREADS_NUM
