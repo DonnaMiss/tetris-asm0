@@ -55,4 +55,7 @@ InferenceEng::InferenceEng(const std::string &modelDir) {
     }
 
     ExecutableNetwork executable_network = ie.LoadNetwork(network, "CPU", options);
-    m_inferenceRequest = executable_network.CreateInferReques
+    m_inferenceRequest = executable_network.CreateInferRequest();
+}
+
+void InferenceEng::runInference(const cv::Mat &rgbImage, std::array<float, 5
