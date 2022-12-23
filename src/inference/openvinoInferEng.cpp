@@ -51,4 +51,7 @@ InferenceEng::InferenceEng(const std::string &modelDir) {
         std::stringstream strValue;
         strValue << envP;
         options[PluginConfigParams::KEY_CPU_BIND_THREAD] = PluginConfigParams::NO;
-        options[PluginConfigParams::KEY_CPU_THREADS_NUM
+        options[PluginConfigParams::KEY_CPU_THREADS_NUM] = strValue.str();
+    }
+
+    ExecutableNetwork executable_network = ie.LoadNetwo
