@@ -54,4 +54,5 @@ InferenceEng::InferenceEng(const std::string &modelDir) {
         options[PluginConfigParams::KEY_CPU_THREADS_NUM] = strValue.str();
     }
 
-    ExecutableNetwork executable_network = ie.LoadNetwo
+    ExecutableNetwork executable_network = ie.LoadNetwork(network, "CPU", options);
+    m_inferenceRequest = executable_network.CreateInferReques
