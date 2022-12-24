@@ -58,4 +58,5 @@ InferenceEng::InferenceEng(const std::string &modelDir) {
     m_inferenceRequest = executable_network.CreateInferRequest();
 }
 
-void InferenceEng::runInference(const cv::Mat &rgbImage, std::array<float, 5
+void InferenceEng::runInference(const cv::Mat &rgbImage, std::array<float, 500> &output) {
+    // During model optimization, pass -reverse_inp
