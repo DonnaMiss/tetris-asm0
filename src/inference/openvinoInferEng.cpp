@@ -61,4 +61,6 @@ InferenceEng::InferenceEng(const std::string &modelDir) {
 void InferenceEng::runInference(const cv::Mat &rgbImage, std::array<float, 500> &output) {
     // During model optimization, pass -reverse_input_channels flag so that input is rgb
     Blob::Ptr imgBlob = wrapMat2Blob(rgbImage);
- 
+    m_inferenceRequest.SetBlob(m_inputName, imgBlob);
+
+    m_inferenceRequest.Infer()
