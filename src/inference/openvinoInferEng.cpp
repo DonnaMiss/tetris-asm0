@@ -63,4 +63,6 @@ void InferenceEng::runInference(const cv::Mat &rgbImage, std::array<float, 500> 
     Blob::Ptr imgBlob = wrapMat2Blob(rgbImage);
     m_inferenceRequest.SetBlob(m_inputName, imgBlob);
 
-    m_inferenceRequest.Infer()
+    m_inferenceRequest.Infer();
+    Blob::Ptr outputBlob = m_inferenceRequest.GetBlob(m_outputName);
+    const int dims
