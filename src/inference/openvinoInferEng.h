@@ -5,4 +5,5 @@
 
 class InferenceEng: InferenceEngineTemplate {
 public:
-    Inf
+    InferenceEng(const std::string& modelDir);
+    void runInference(const cv::Mat& rgbImage, std::array<f
