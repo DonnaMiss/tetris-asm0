@@ -66,4 +66,5 @@ void InferenceEng::runInference(const cv::Mat &rgbImage, std::array<float, 500> 
     m_inferenceRequest.Infer();
     Blob::Ptr outputBlob = m_inferenceRequest.GetBlob(m_outputName);
     const int dims = outputBlob->size();
-    memcpy(output.data(), outputBlob->buffer(), dims * sizeof
+    memcpy(output.data(), outputBlob->buffer(), dims * sizeof(float));
+}
