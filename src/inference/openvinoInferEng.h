@@ -1,4 +1,8 @@
 #pragma once
 
 #include "inferenceEngineTemplate.h"
-#include <infer
+#include <inference_engine.hpp>
+
+class InferenceEng: InferenceEngineTemplate {
+public:
+    Inf
