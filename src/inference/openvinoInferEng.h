@@ -8,4 +8,6 @@ public:
     InferenceEng(const std::string& modelDir);
     void runInference(const cv::Mat& rgbImage, std::array<float, 500>& output) override;
 private:
-    InferenceEngine::InferRequest m_inferenceR
+    InferenceEngine::InferRequest m_inferenceRequest;
+    std::string m_inputName;
+    std::string m_outputNa
