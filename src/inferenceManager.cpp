@@ -35,3 +35,55 @@ void InferenceManager::readTemplateFromDisk(const std::string& templatePath, std
     std::ifstream infile(templatePath, std::ifstream::binary);
     infile.read(reinterpret_cast<char*>(templ.data()), 2000);
 }
+
+void InferenceManager::runBenchmark(unsigned int numIterations) {
+    // Read the face chip image to rgb
+    auto bgrImg = cv::imread("../test_data/face_chip.jpg");
+
+    // Ensure the face chip is of the expected size
+    if (bgrImg.cols != 112 || bgrImg.rows != 112 || bgrImg.channels() != 3) {
+        throw std::runtime_error("Face chip is not of the expected size!");
+    }
+
+    cv::Mat rgbImage;
+    cv::cvtColor(bgrImg, rgbImage, cv::COLOR_BGR2RGB);
+
+    std::array<float, 500> output{};
+
+    // Run inference once without timing to initialize weights, etc
+    m_inferenceEnginePtr->runInference(rgbImage, output);
+
+    // Time the implementation
+    auto t1 = Clock::now();
+    for (unsigned int i = 0; i < numIterations; ++i) {
+        m_inferenceEnginePtr->runInference(rgbImage, output);
+    }
+    auto t2 = Clock::now();
+    auto totalTime = std::chrono::duration_cast<std::chrono::milliseconds>(t2 - t1).count();
+
+    // Ensure the integrity of the output against the expected result.
+    // NOTE: This template is already normalized
+    std::array<float, 500> expectedOutput{};
+    readTemplateFromDisk("../test_data/template.bin", expectedOutput);
+
+    normalize(output);
+    normalize(expectedOutput);
+
+    auto simScore = dotProduct(output, expectedOutput);
+    std::cout << "Similarity score: " << simScore << std::endl;
+    if (simScore > 1.03 || simScore < 0.95) {
+        // Due to optimizations in OpenVINO, output vector is not exactly the same
+        throw std::runtime_error("Error, similarity score is not 1!");
+    }
+
+    auto avgInferenceTime = totalTime / numIterations;
+    std::cout << "Average inference speed per face chip: " << avgInferenceTime << " ms" << std::endl;
+
+    // Read the number of threads used
+    auto numThreadsUsed = getNumThreads();
+    std::cout << "Number of threads used: " << numThreadsUsed << std::endl;
+
+    // Read the memory usage
+    auto memUsageKb = getProcessMemUsage();
+    std::cout << "Memory usage: " << memUsageKb / 1000000 << " Gb" << std::endl;
+}
