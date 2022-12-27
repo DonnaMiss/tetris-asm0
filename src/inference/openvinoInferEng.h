@@ -10,4 +10,6 @@ public:
 private:
     InferenceEngine::InferRequest m_inferenceRequest;
     std::string m_inputName;
-    std::string m_outputNa
+    std::string m_outputName;
+    const std::string XML_NAME = "openvino_rgb.xml";
+};
