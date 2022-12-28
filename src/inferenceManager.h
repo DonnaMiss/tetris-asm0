@@ -8,4 +8,11 @@
 #elif USE_ONNX_DEFAULT
 #include "onnxRuntimeDefaultInferEng.h"
 #elif USE_OPENVINO
-#include "openvinoInfe
+#include "openvinoInferEng.h"
+#else
+#include "ncnnInferEng.h"
+#endif
+
+class InferenceManager {
+public:
+    InferenceManager(const
