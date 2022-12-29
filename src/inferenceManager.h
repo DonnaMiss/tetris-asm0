@@ -15,4 +15,6 @@
 
 class InferenceManager {
 public:
-    InferenceManager(const
+    InferenceManager(const std::string& modelDir);
+
+    void runBenchmark(unsigned int numIteration
