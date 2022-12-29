@@ -17,4 +17,6 @@ class InferenceManager {
 public:
     InferenceManager(const std::string& modelDir);
 
-    void runBenchmark(unsigned int numIteration
+    void runBenchmark(unsigned int numIterations = 1000);
+private:
+    std::unique_ptr<InferenceEng> m_inferenceEnginePtr = n
