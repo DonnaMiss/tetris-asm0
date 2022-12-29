@@ -22,4 +22,5 @@ private:
     std::unique_ptr<InferenceEng> m_inferenceEnginePtr = nullptr;
     const std::string m_imagePath;
 
-    void readTemplateFromDisk(const std::string& t
+    void readTemplateFromDisk(const std::string& templatePath, std::array<float, 500>& templ);
+    float dotProduct(const std::array<f
