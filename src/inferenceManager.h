@@ -24,4 +24,5 @@ private:
 
     void readTemplateFromDisk(const std::string& templatePath, std::array<float, 500>& templ);
     float dotProduct(const std::array<float, 500>& v1, const std::array<float, 500>& v2);
-    void normalize(std::array<fl
+    void normalize(std::array<float, 500>& v);
+};
