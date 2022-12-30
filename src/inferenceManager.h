@@ -23,4 +23,5 @@ private:
     const std::string m_imagePath;
 
     void readTemplateFromDisk(const std::string& templatePath, std::array<float, 500>& templ);
-    float dotProduct(const std::array<f
+    float dotProduct(const std::array<float, 500>& v1, const std::array<float, 500>& v2);
+    void normalize(std::array<fl
