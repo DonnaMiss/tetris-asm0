@@ -9,4 +9,7 @@
 #include <memory>
 #include "util.h"
 
-std::strin
+std::string exec(const char* cmd) {
+    std::array<char, 128> buffer;
+    std::string result;
+    std:
