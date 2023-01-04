@@ -16,4 +16,5 @@ std::string exec(const char* cmd) {
     if (!pipe) {
         throw std::runtime_error("popen() failed!");
     }
-    while (fget
+    while (fgets(buffer.data(), buffer.size(), pipe.get()) != nullptr) {
+        result +=
