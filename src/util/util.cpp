@@ -17,4 +17,10 @@ std::string exec(const char* cmd) {
         throw std::runtime_error("popen() failed!");
     }
     while (fgets(buffer.data(), buffer.size(), pipe.get()) != nullptr) {
-        result +=
+        result += buffer.data();
+    }
+    return result;
+}
+
+unsigned int getNumThreads() {
+    pid_t pid = getpid()
