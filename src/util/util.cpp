@@ -27,4 +27,8 @@ unsigned int getNumThreads() {
     std::string command = "cat /proc/" + std::to_string(pid) + "/status | grep Threads";
     auto retStr = exec(command.c_str());
 
-    auto numThreads
+    auto numThreads = retStr.substr(9);
+    std::stringstream ss(numThreads);
+
+    int nThreads;
+    ss >> nThreads;
