@@ -32,3 +32,9 @@ unsigned int getNumThreads() {
 
     int nThreads;
     ss >> nThreads;
+
+    return nThreads;
+}
+
+double getProcessMemUsage() {
+    using std::ios_bas
