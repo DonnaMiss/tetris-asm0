@@ -24,4 +24,7 @@ std::string exec(const char* cmd) {
 
 unsigned int getNumThreads() {
     pid_t pid = getpid();
-    std::string command = "cat /proc/" + std::to_string(pid) + "/status | g
+    std::string command = "cat /proc/" + std::to_string(pid) + "/status | grep Threads";
+    auto retStr = exec(command.c_str());
+
+    auto numThreads
