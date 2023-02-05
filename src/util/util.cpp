@@ -37,4 +37,8 @@ unsigned int getNumThreads() {
 }
 
 double getProcessMemUsage() {
-    using std::ios_bas
+    using std::ios_base;
+    using std::ifstream;
+    using std::string;
+
+//        double vmUsa
