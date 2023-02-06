@@ -41,4 +41,7 @@ double getProcessMemUsage() {
     using std::ifstream;
     using std::string;
 
-//        double vmUsa
+//        double vmUsage     = 0.0;
+    double residentSet = 0.0;
+
+    // 'file' stat seems to give
