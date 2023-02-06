@@ -44,4 +44,7 @@ double getProcessMemUsage() {
 //        double vmUsage     = 0.0;
     double residentSet = 0.0;
 
-    // 'file' stat seems to give
+    // 'file' stat seems to give the most reliable results
+    ifstream stat_stream("/proc/self/stat", ios_base::in);
+
+    
