@@ -47,4 +47,5 @@ double getProcessMemUsage() {
     // 'file' stat seems to give the most reliable results
     ifstream stat_stream("/proc/self/stat", ios_base::in);
 
-    
+    // dummy vars for leading entries in stat that we don't care about
+    stri
