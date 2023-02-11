@@ -49,4 +49,5 @@ double getProcessMemUsage() {
 
     // dummy vars for leading entries in stat that we don't care about
     string pid, comm, state, ppid, pgrp, session, tty_nr;
-    string tpgid, flags, minflt,
+    string tpgid, flags, minflt, cminflt, majflt, cmajflt;
+    string utime, stime, cutime, cstime, prio
