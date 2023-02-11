@@ -48,4 +48,5 @@ double getProcessMemUsage() {
     ifstream stat_stream("/proc/self/stat", ios_base::in);
 
     // dummy vars for leading entries in stat that we don't care about
-    stri
+    string pid, comm, state, ppid, pgrp, session, tty_nr;
+    string tpgid, flags, minflt,
