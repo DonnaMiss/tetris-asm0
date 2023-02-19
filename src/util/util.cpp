@@ -53,4 +53,8 @@ double getProcessMemUsage() {
     string utime, stime, cutime, cstime, priority, nice;
     string O, itrealvalue, starttime;
 
-    // the two fields we 
+    // the two fields we want
+    unsigned long vsize;
+    long rss;
+
+    stat_stream >> pid >> comm >> stat
