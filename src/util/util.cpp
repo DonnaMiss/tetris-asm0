@@ -57,4 +57,5 @@ double getProcessMemUsage() {
     unsigned long vsize;
     long rss;
 
-    stat_stream >> pid >> comm >> stat
+    stat_stream >> pid >> comm >> state >> ppid >> pgrp >> session >> tty_nr
+                >> tpgid >> flags >> minfl
