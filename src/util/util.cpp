@@ -58,4 +58,5 @@ double getProcessMemUsage() {
     long rss;
 
     stat_stream >> pid >> comm >> state >> ppid >> pgrp >> session >> tty_nr
-                >> tpgid >> flags >> minfl
+                >> tpgid >> flags >> minflt >> cminflt >> majflt >> cmajflt
+                >> utime >> stime >> cutime >>
