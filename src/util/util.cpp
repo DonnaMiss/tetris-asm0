@@ -60,4 +60,8 @@ double getProcessMemUsage() {
     stat_stream >> pid >> comm >> state >> ppid >> pgrp >> session >> tty_nr
                 >> tpgid >> flags >> minflt >> cminflt >> majflt >> cmajflt
                 >> utime >> stime >> cutime >> cstime >> priority >> nice
-                >> O >> itrealvalue >> starttime >> vsize >
+                >> O >> itrealvalue >> starttime >> vsize >> rss; // don't care about the rest
+
+    stat_stream.close();
+
+    long page_size_kb = sysc
