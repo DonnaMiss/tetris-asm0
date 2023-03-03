@@ -65,4 +65,8 @@ double getProcessMemUsage() {
     stat_stream.close();
 
     long page_size_kb = sysconf(_SC_PAGE_SIZE) / 1024; // in case x86-64 is configured to use 2MB pages
-//        vmUsage  
+//        vmUsage     = vsize / 1024.0;
+    residentSet = rss * page_size_kb;
+
+    return residentSet;
+}
